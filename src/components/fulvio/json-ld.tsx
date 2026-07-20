@@ -7,6 +7,7 @@ import { faqItems } from "@/components/fulvio/faq";
 function jsonLdScript(id: string, data: unknown) {
   return (
     <script
+      key={`jsonLdScript-${id}`}
       type="application/ld+json"
       id={id}
       // Server-only serialization; keys are static so this is safe.
