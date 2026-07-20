@@ -95,7 +95,7 @@ export default async function OG({
             width: 480,
             height: 480,
             borderRadius: "50%",
-            background: "radial-gradient(circle, #12467a 0%, transparent 70%)",
+            background: "radial-gradient(circle, #8460e7 0%, transparent 70%)",
             opacity: 0.5,
           }}
         />

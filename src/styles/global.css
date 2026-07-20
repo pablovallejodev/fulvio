@@ -15,9 +15,9 @@
   --line-strong: rgba(255, 255, 255, 0.18);
 
   /* Brand colors — Rafa/Spanish tennis palette */
-  --court: #12467a;
-  --court-deep: #0b3159;
-  --court-soft: rgba(18, 70, 122, 0.08);
+  --court: #8460e7;
+  --court-deep: #5534b8;
+  --court-soft: rgba(132, 96, 231, 0.08);
   --ball: #dfe843;
   --ball-deep: #b8bf2e;
   --ball-soft: rgba(223, 232, 67, 0.08);
