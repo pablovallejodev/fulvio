@@ -207,6 +207,12 @@
   overflow: hidden;
 }
 
+@media (min-width: 1025px) {
+  .hero {
+    padding-top: clamp(80px, 10vw, 128px);
+  }
+}
+
 .heroBg {
   position: absolute;
   inset: 0;
