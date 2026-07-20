@@ -66,8 +66,8 @@ export default function SpanishSystemSection({ lang }: { lang: Locale }) {
             </Reveal>
             <Stagger className={styles["systemPrinciples"]} gap={0.04}>
               {principles.map((item) => (
-                <StaggerItem key={item}>
-                  <span className={styles["principle"]}>{item}</span>
+                <StaggerItem key={item} className={styles["principle"]}>
+                  {item}
                 </StaggerItem>
               ))}
             </Stagger>

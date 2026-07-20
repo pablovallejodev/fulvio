@@ -18,7 +18,7 @@ export const CONTACT = {
 export const PHOTOS = {
   /** Portrait for the hero. Real photo of Fulvio alone. */
   heroPortrait: {
-    src: "/photos/fulvio-portrait.jpg",
+    src: "/photos/fulvio-rafa.jpg",
     fallback: "https://img.youtube.com/vi/JMYoxqG4ebc/maxresdefault.jpg",
     hint: "Portrait of Fulvio on court in Phuket",
   },
@@ -37,10 +37,26 @@ export const PHOTOS = {
   /** Fulvio on the motorbike with Tarzán the dog. */
   fulvioTarzan: {
     src: "/photos/fulvio-tarzan.jpg",
-    fallback: "https://img.youtube.com/vi/T2dYp7guMGc/maxresdefault.jpg",
+    fallback: "https://img.youtube.com/vi/T2dYp7guMGc/hqdefault.jpg",
     hint: "Fulvio on the motorbike with Tarzán the dog",
   },
 } as const;
+
+export type GalleryCell = "hero" | "wide" | "medium" | "tarzan" | "small";
+
+export type GalleryImage = {
+  src: string;
+  fallback: string;
+  altKey:
+    | "gallery_alt_training"
+    | "gallery_alt_intensity"
+    | "gallery_alt_drill"
+    | "gallery_alt_tarzan"
+    | "gallery_alt_footwork"
+    | "gallery_alt_session"
+    | "gallery_alt_pointplay";
+  cell: GalleryCell;
+};
 
 export const VIDEOS = [
   { id: "JMYoxqG4ebc", principle: "zones" },
@@ -49,36 +65,50 @@ export const VIDEOS = [
   { id: "heKDmCt4bug", principle: "review_ru" },
 ] as const;
 
-export const GALLERY_IMAGES = [
+export const GALLERY_IMAGES: GalleryImage[] = [
   {
-    src: "https://img.youtube.com/vi/JMYoxqG4ebc/maxresdefault.jpg",
-    altKey: "gallery_alt_training" as const,
+    src: "https://img.youtube.com/vi/JMYoxqG4ebc/hqdefault.jpg",
+    fallback: "https://img.youtube.com/vi/JMYoxqG4ebc/hqdefault.jpg",
+    altKey: "gallery_alt_training",
+    cell: "hero",
   },
   {
-    src: "https://img.youtube.com/vi/-V8IvHB2o1s/maxresdefault.jpg",
-    altKey: "gallery_alt_intensity" as const,
+    src: "https://img.youtube.com/vi/-V8IvHB2o1s/hqdefault.jpg",
+    fallback: "https://img.youtube.com/vi/-V8IvHB2o1s/hqdefault.jpg",
+    altKey: "gallery_alt_intensity",
+    cell: "wide",
   },
   {
-    src: "https://img.youtube.com/vi/gTIDTWZZSKc/maxresdefault.jpg",
-    altKey: "gallery_alt_drill" as const,
+    src: "https://img.youtube.com/vi/gTIDTWZZSKc/hqdefault.jpg",
+    fallback: "https://img.youtube.com/vi/gTIDTWZZSKc/hqdefault.jpg",
+    altKey: "gallery_alt_drill",
+    cell: "medium",
   },
   {
-    src: "/photos/fulvio-tarzan.jpg",
-    altKey: "gallery_alt_tarzan" as const,
+    src: PHOTOS.fulvioTarzan.src,
+    fallback: PHOTOS.fulvioTarzan.fallback,
+    altKey: "gallery_alt_tarzan",
+    cell: "tarzan",
   },
   {
-    src: "https://img.youtube.com/vi/T2dYp7guMGc/maxresdefault.jpg",
-    altKey: "gallery_alt_footwork" as const,
+    src: "https://img.youtube.com/vi/T2dYp7guMGc/hqdefault.jpg",
+    fallback: "https://img.youtube.com/vi/T2dYp7guMGc/hqdefault.jpg",
+    altKey: "gallery_alt_footwork",
+    cell: "small",
   },
   {
-    src: "https://img.youtube.com/vi/WZPTR23Afrs/maxresdefault.jpg",
-    altKey: "gallery_alt_session" as const,
+    src: "https://img.youtube.com/vi/WZPTR23Afrs/hqdefault.jpg",
+    fallback: "https://img.youtube.com/vi/WZPTR23Afrs/hqdefault.jpg",
+    altKey: "gallery_alt_session",
+    cell: "small",
   },
   {
-    src: "https://img.youtube.com/vi/DBqIOrM6dwc/maxresdefault.jpg",
-    altKey: "gallery_alt_pointplay" as const,
+    src: "https://img.youtube.com/vi/DBqIOrM6dwc/hqdefault.jpg",
+    fallback: "https://img.youtube.com/vi/DBqIOrM6dwc/hqdefault.jpg",
+    altKey: "gallery_alt_pointplay",
+    cell: "small",
   },
-] as const;
+];
 
 export function whatsappUrl(message: string) {
   return `https://wa.me/${CONTACT.whatsapp}?text=${encodeURIComponent(message)}`;
@@ -89,5 +119,5 @@ export function youtubeEmbedUrl(videoId: string) {
 }
 
 export function youtubeThumb(videoId: string) {
-  return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+  return `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 }

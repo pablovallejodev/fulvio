@@ -105,7 +105,6 @@ export type FulvioDictionary = {
   coach_role: string;
   coach_bio_1: string;
   coach_bio_2: string;
-  coach_bio_3: string;
   coach_fact_1_label: string;
   coach_fact_1_value: string;
   coach_fact_2_label: string;
@@ -315,8 +314,6 @@ const en: FulvioDictionary = {
     "Italian by birth, coach by vocation, Phuket by choice. Fulvio has spent more than two decades on court \u2014 from academies in Spain and Italy to programs in Central America, the Caribbean and Southeast Asia \u2014 always teaching the same thing: the Spanish tennis method, adapted to whoever is on the other side of the net.",
   coach_bio_2:
     "In Phuket he trains juniors, adults and visitors on a single principle: intensity with a plan. No shortcuts, no rockstar drills, no talk that does not translate into a better ball. When the session ends, he goes home on his motorbike with Tarz\u00e1n, his dog and unofficial assistant coach. When it starts again, it is Vamos, again.",
-  coach_bio_3:
-    "Credentials are presented here as professional training received, not as an official endorsement by third parties.",
   coach_fact_1_label: "Based in",
   coach_fact_1_value: "Phuket, Thailand",
   coach_fact_2_label: "Coaching since",
@@ -542,8 +539,6 @@ const es: FulvioDictionary = {
     "Italiano de nacimiento, entrenador por vocación, en Phuket por elección. Fulvio ha pasado más de dos décadas en pista — de academias en España e Italia a programas en Centroamérica, el Caribe y el sudeste asiático — enseñando siempre lo mismo: el método español de tenis, adaptado a quien esté al otro lado de la red.",
   coach_bio_2:
     "En Phuket entrena a juniors, adultos y visitantes bajo un mismo principio: intensidad con plan. Sin atajos, sin ejercicios de postureo, sin discurso que no se traduzca en una mejor bola. Cuando la sesión acaba, vuelve a casa en la moto con Tarzán, su perro y ayudante extraoficial. Cuando empieza otra vez, es Vamos, otra vez.",
-  coach_bio_3:
-    "Las credenciales aquí se presentan como formación profesional recibida, no como aval oficial de terceros.",
   coach_fact_1_label: "Base",
   coach_fact_1_value: "Phuket, Tailandia",
   coach_fact_2_label: "En pista desde",
@@ -764,8 +759,6 @@ const it: FulvioDictionary = {
     "Italiano di nascita, coach per vocazione, a Phuket per scelta. Fulvio ha passato più di vent'anni in campo — da accademie in Spagna e Italia a programmi in America Centrale, Caraibi e Sud-Est asiatico — insegnando sempre la stessa cosa: il metodo spagnolo, adattato a chi sta dall'altra parte della rete.",
   coach_bio_2:
     "A Phuket allena junior, adulti e visitatori con un unico principio: intensità con un piano. Niente scorciatoie, niente drill da rockstar, niente discorsi che non si traducano in una palla migliore. Quando la sessione finisce, torna a casa in moto con Tarzán, il suo cane e vice-coach ufficioso. Quando ricomincia, è di nuovo Vamos.",
-  coach_bio_3:
-    "Le credenziali qui sono presentate come formazione professionale ricevuta, non come endorsement ufficiale di terzi.",
   coach_fact_1_label: "Base",
   coach_fact_1_value: "Phuket, Thailandia",
   coach_fact_2_label: "In campo dal",
@@ -984,8 +977,6 @@ const ru: FulvioDictionary = {
     "Итальянец по рождению, тренер по призванию, в Пхукете по выбору. Фульвио провёл более двадцати лет на корте — от академий в Испании и Италии до программ в Центральной Америке, Карибах и Юго-Восточной Азии — и всегда учил одному: испанскому методу тенниса, адаптированному под того, кто стоит с другой стороны сетки.",
   coach_bio_2:
     "В Пхукете он тренирует юниоров, взрослых и гостей по одному принципу: интенсивность с планом. Никаких обходных путей, никаких показных упражнений, никакой болтовни, которая не превращается в лучший мяч. Когда занятие заканчивается, он возвращается домой на мотоцикле с Тарзаном — своим псом и неофициальным помощником. Когда начинается снова — снова Vamos.",
-  coach_bio_3:
-    "Указанные квалификации представлены как полученное профессиональное обучение, а не как официальная поддержка третьих лиц.",
   coach_fact_1_label: "База",
   coach_fact_1_value: "Пхукет, Таиланд",
   coach_fact_2_label: "На корте с",
@@ -1101,8 +1092,7 @@ const th: FulvioDictionary = {
   hero_subtitle:
     "โค้ชอิตาเลียนหนึ่งคน เมธอดเทนนิสสเปน ยี่สิบห้าปีบนคอร์ตในสามทวีป",
   hero_subtitle_location: "ภูเก็ต, ประเทศไทย.",
-  hero_subtitle_after:
-    " ฝึกส่วนตัวที่ภูเก็ตสำหรับผู้เล่นที่ต้องการสู้ทุกแต้ม",
+  hero_subtitle_after: " ฝึกส่วนตัวที่ภูเก็ตสำหรับผู้เล่นที่ต้องการสู้ทุกแต้ม",
   hero_cta_primary: "ทักทาย WhatsApp",
   hero_cta_secondary: "ดูเมธอด",
   hero_badge_label: "ตอนนี้สอนที่",
@@ -1200,8 +1190,6 @@ const th: FulvioDictionary = {
     "อิตาเลียนโดยกำเนิด โค้ชโดยแรงบันดาลใจ ภูเก็ตโดยการเลือก Fulvio ใช้เวลามากกว่ายี่สิบปีบนคอร์ต — จากอะคาเดมีในสเปนและอิตาลี สู่โปรแกรมในอเมริกากลาง แคริบเบียน และเอเชียตะวันออกเฉียงใต้ — สอนสิ่งเดียวกันเสมอ: เมธอดเทนนิสสเปน ปรับให้กับคนที่ยืนอยู่อีกฝั่งของเน็ต",
   coach_bio_2:
     "ในภูเก็ตเขาสอนจูเนียร์ ผู้ใหญ่ และผู้มาเยือนด้วยหลักเดียว: ความเข้มข้นที่มีแผน ไม่มีทางลัด ไม่มีดรริลล์โชว์ตัว ไม่มีคำพูดที่ไม่แปลเป็นลูกที่ดีขึ้น เมื่อเซสชันจบ เขากลับบ้านด้วยมอเตอร์ไซค์กับ Tarzán หมาของเขาและผู้ช่วยโค้ชอย่างไม่เป็นทางการ เมื่อเริ่มใหม่ก็ Vamos อีกครั้ง",
-  coach_bio_3:
-    "คุณสมบัติที่ระบุนำเสนอในฐานะการฝึกอบรมทางวิชาชีพที่ได้รับ ไม่ใช่การรับรองอย่างเป็นทางการจากบุคคลที่สาม",
   coach_fact_1_label: "ฐาน",
   coach_fact_1_value: "ภูเก็ต ประเทศไทย",
   coach_fact_2_label: "สอนตั้งแต่",
@@ -1312,7 +1300,8 @@ const zh: FulvioDictionary = {
   hero_title_1: "以西班牙",
   hero_title_2: "方式训练。",
   hero_vamos: "Vamos!",
-  hero_subtitle: "一位意大利教练。西班牙网球方法。二十五年球场经验，横跨三大洲。",
+  hero_subtitle:
+    "一位意大利教练。西班牙网球方法。二十五年球场经验，横跨三大洲。",
   hero_subtitle_location: "普吉，泰国。",
   hero_subtitle_after: "在普吉一对一，为愿意为每一分而战的球员而设。",
   hero_cta_primary: "WhatsApp 联系",
@@ -1412,7 +1401,6 @@ const zh: FulvioDictionary = {
     "生于意大利，因志业而成为教练，因选择而在普吉。Fulvio 在球场上度过了二十多年——从西班牙、意大利的学院，到中美、加勒比与东南亚的项目——始终教着同一件事：西班牙网球方法，因人而调。",
   coach_bio_2:
     "在普吉他训练青少年、成人与访客，遵循一个原则：带着计划的强度。没有捷径，没有花活，没有转化不成好球的空谈。训练结束，他骑摩托车回家，带着 Tarzán——他的狗兼非正式助理教练。下一次开始，又是 Vamos。",
-  coach_bio_3: "本页所列资格均以所接受的专业培训呈现，不代表第三方的官方背书。",
   coach_fact_1_label: "驻地",
   coach_fact_1_value: "泰国普吉",
   coach_fact_2_label: "执教起始",

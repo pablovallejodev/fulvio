@@ -1,17 +1,10 @@
 import styles from "@/styles/FulvioLanding.module.css";
 import { getT } from "@/i18n/dictionary";
 import { Locale } from "@/i18n/config";
-import { Reveal, Stagger, StaggerItem } from "@/components/fulvio/motion";
+import { Reveal } from "@/components/fulvio/motion";
 
 export default function ManifestoSection({ lang }: { lang: Locale }) {
   const t = getT(lang);
-  const values = [
-    t.manifesto_value_1,
-    t.manifesto_value_2,
-    t.manifesto_value_3,
-    t.manifesto_value_4,
-    t.manifesto_value_5,
-  ];
 
   return (
     <section
@@ -36,13 +29,6 @@ export default function ManifestoSection({ lang }: { lang: Locale }) {
           <Reveal delay={0.2}>
             <p className={styles["lead"]}>{t.manifesto_paragraph}</p>
           </Reveal>
-          <Stagger className={styles["manifestoValues"]}>
-            {values.map((value) => (
-              <StaggerItem key={value}>
-                <div className={styles["manifestoValue"]}>{value}</div>
-              </StaggerItem>
-            ))}
-          </Stagger>
         </div>
       </div>
     </section>

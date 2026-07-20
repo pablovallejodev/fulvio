@@ -9,13 +9,6 @@ import { Reveal } from "@/components/fulvio/motion";
 
 export default function HeroSection({ lang }: { lang: Locale }) {
   const t = getT(lang);
-  const marqueeItems = [
-    t.hero_marquee_1,
-    t.hero_marquee_2,
-    t.hero_marquee_3,
-    t.hero_marquee_4,
-    t.hero_marquee_5,
-  ];
 
   return (
     <section className={styles["hero"]} aria-labelledby="hero-title">
@@ -109,16 +102,6 @@ export default function HeroSection({ lang }: { lang: Locale }) {
         </div>
       </div>
 
-      <div className={styles["heroMarquee"]} aria-hidden="true">
-        <div className={styles["heroMarqueeTrack"]}>
-          {[...marqueeItems, ...marqueeItems].map((item, index) => (
-            <span key={index} className={styles["heroMarqueeItem"]}>
-              {item}
-              <span className={styles["heroMarqueeDot"]} />
-            </span>
-          ))}
-        </div>
-      </div>
     </section>
   );
 }

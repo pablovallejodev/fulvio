@@ -68,9 +68,6 @@ export default function CoachSection({ lang }: { lang: Locale }) {
                 ))}
               </div>
             </Reveal>
-            <Reveal delay={0.3}>
-              <p className={styles["note"]}>{t.coach_bio_3}</p>
-            </Reveal>
           </div>
         </div>
       </div>
