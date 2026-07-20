@@ -119,6 +119,7 @@ export type FulvioDictionary = {
   videos_lead: string;
   video_zones_title: string;
   video_intensity_title: string;
+  video_tarzan_title: string;
   video_review_en_title: string;
   video_review_ru_title: string;
   video_play: string;
@@ -329,6 +330,7 @@ const en: FulvioDictionary = {
     "Clips and reviews from the Fulvio Coach channel. Zones, drills, and players from four continents.",
   video_zones_title: "Spanish system \u00b7 Zones 3, 2, 1",
   video_intensity_title: "High-intensity session",
+  video_tarzan_title: "Tarz\u00e1n \u00b7 Ride to training",
   video_review_en_title: "Player review \u00b7 Ben (England)",
   video_review_ru_title: "Player review \u00b7 Gleb (Russia)",
   video_play: "Play",
@@ -554,6 +556,7 @@ const es: FulvioDictionary = {
     "Clips y reseñas del canal Fulvio Coach. Zonas, drills y jugadores de cuatro continentes.",
   video_zones_title: "Sistema español · Zonas 3, 2, 1",
   video_intensity_title: "Sesión de alta intensidad",
+  video_tarzan_title: "Tarzán · Camino al entreno en moto",
   video_review_en_title: "Reseña · Ben (Inglaterra)",
   video_review_ru_title: "Reseña · Gleb (Rusia)",
   video_play: "Reproducir",
@@ -774,6 +777,7 @@ const it: FulvioDictionary = {
     "Clip e recensioni dal canale Fulvio Coach. Zone, drill e giocatori da quattro continenti.",
   video_zones_title: "Sistema spagnolo · Zone 3, 2, 1",
   video_intensity_title: "Sessione ad alta intensità",
+  video_tarzan_title: "Tarzán · In moto verso l'allenamento",
   video_review_en_title: "Recensione · Ben (Inghilterra)",
   video_review_ru_title: "Recensione · Gleb (Russia)",
   video_play: "Guarda",
@@ -992,6 +996,7 @@ const ru: FulvioDictionary = {
     "Клипы и отзывы с канала Fulvio Coach. Зоны, drill'ы и игроки с четырёх континентов.",
   video_zones_title: "Испанская система · Зоны 3, 2, 1",
   video_intensity_title: "Тренировка с высокой интенсивностью",
+  video_tarzan_title: "Тарзан · Дорога на тренировку на мото",
   video_review_en_title: "Отзыв · Ben (Англия)",
   video_review_ru_title: "Отзыв · Глеб (Россия)",
   video_play: "Смотреть",
@@ -1205,6 +1210,7 @@ const th: FulvioDictionary = {
     "คลิปและรีวิวจากช่อง Fulvio Coach โซน ดรริลล์ และผู้เล่นจากสี่ทวีป",
   video_zones_title: "ระบบสเปน · โซน 3, 2, 1",
   video_intensity_title: "เซสชันความเข้มข้นสูง",
+  video_tarzan_title: "Tarzán · ขี่มอเตอร์ไซค์ไปซ้อม",
   video_review_en_title: "รีวิว · Ben (อังกฤษ)",
   video_review_ru_title: "รีวิว · Gleb (รัสเซีย)",
   video_play: "เล่น",
@@ -1416,6 +1422,7 @@ const zh: FulvioDictionary = {
     "来自 Fulvio Coach 频道的片段与评价。分区、训练、来自四大洲的球员。",
   video_zones_title: "西班牙体系 · 3, 2, 1 区",
   video_intensity_title: "高强度训练",
+  video_tarzan_title: "Tarzán · 骑车去训练",
   video_review_en_title: "球员评价 · Ben（英国）",
   video_review_ru_title: "球员评价 · Gleb（俄罗斯）",
   video_play: "播放",

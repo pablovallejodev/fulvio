@@ -37,7 +37,7 @@ export const PHOTOS = {
   /** Fulvio on the motorbike with Tarzán the dog. */
   fulvioTarzan: {
     src: "/photos/fulvio-tarzan.jpg",
-    fallback: "https://img.youtube.com/vi/T2dYp7guMGc/hqdefault.jpg",
+    fallback: "https://img.youtube.com/vi/j5woNGWz8mI/hqdefault.jpg",
     hint: "Fulvio on the motorbike with Tarzán the dog",
   },
 } as const;
@@ -58,12 +58,34 @@ export type GalleryImage = {
   cell: GalleryCell;
 };
 
-export const VIDEOS = [
-  { id: "JMYoxqG4ebc", principle: "zones" },
-  { id: "-V8IvHB2o1s", principle: "intensity" },
-  { id: "Z0fvtd7TALw", principle: "review_en" },
-  { id: "heKDmCt4bug", principle: "review_ru" },
-] as const;
+export type VideoArea =
+  | "hero"
+  | "sideTop"
+  | "sideBottom"
+  | "featured"
+  | "sideExtra";
+
+export type VideoPrinciple =
+  | "tarzan"
+  | "zones"
+  | "intensity"
+  | "review_en"
+  | "review_ru";
+
+export type VideoSlot = {
+  id: string;
+  principle: VideoPrinciple;
+  area: VideoArea;
+};
+
+/** Bento layout: hero left, two side clips right, featured + extra along the bottom row. */
+export const VIDEOS: VideoSlot[] = [
+  { id: "j5woNGWz8mI", principle: "tarzan", area: "hero" },
+  { id: "-V8IvHB2o1s", principle: "intensity", area: "sideTop" },
+  { id: "Z0fvtd7TALw", principle: "review_en", area: "sideBottom" },
+  { id: "JMYoxqG4ebc", principle: "zones", area: "featured" },
+  { id: "heKDmCt4bug", principle: "review_ru", area: "sideExtra" },
+];
 
 export const GALLERY_IMAGES: GalleryImage[] = [
   {

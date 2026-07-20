@@ -36,8 +36,8 @@ export default async function Page({
         <Coach lang={lang} />
         <Videos lang={lang} />
         <Reviews lang={lang} />
-        <Faq lang={lang} />
         <ContactCta lang={lang} />
+        <Faq lang={lang} />
       </main>
       <Footer lang={lang} />
     </div>

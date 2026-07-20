@@ -65,7 +65,7 @@ export default function ContactCta({ lang }: { lang: Locale }) {
                 target={card.external ? "_blank" : undefined}
                 rel={card.external ? "noopener noreferrer" : undefined}
               >
-                <span>
+                <span className={styles["contactCardBody"]}>
                   <span className={styles["contactLabel"]}>{card.label}</span>
                   <br />
                   <span className={styles["contactValue"]}>{card.value}</span>

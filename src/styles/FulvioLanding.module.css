@@ -741,26 +741,78 @@
 
 /* -------------------- Videos -------------------- */
 
-.videoGrid {
+.videoBento {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
-  gap: 20px;
+  grid-template-columns: minmax(0, 1.65fr) minmax(0, 1fr);
+  grid-template-rows: repeat(2, minmax(0, 1fr)) auto;
+  gap: clamp(14px, 1.6vw, 20px);
+  align-items: stretch;
+  min-height: clamp(480px, 52vw, 620px);
 }
 
-.videoGrid > *:first-child {
-  grid-row: span 2;
+.videoCellHero {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  min-height: 0;
+}
+
+.videoCellSideTop {
+  grid-column: 2;
+  grid-row: 1;
+  min-height: 0;
+}
+
+.videoCellSideBottom {
+  grid-column: 2;
+  grid-row: 2;
+  min-height: 0;
+}
+
+.videoCellFeatured {
+  grid-column: 1;
+  grid-row: 3;
+  min-height: 0;
+}
+
+.videoCellSideExtra {
+  grid-column: 2;
+  grid-row: 3;
+  min-height: 0;
 }
 
 .videoCard {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   border-radius: var(--r-lg);
   overflow: hidden;
   background: var(--ink);
   border: 1px solid var(--line);
+  transition:
+    transform 0.45s var(--ease),
+    box-shadow 0.45s var(--ease);
 }
 
-.videoCard.videoLarge {
-  grid-row: span 2;
+.videoCard:hover {
+  transform: translateY(-2px);
+}
+
+.videoCardHero {
+  box-shadow: 0 28px 56px -20px rgba(0, 0, 0, 0.42);
+}
+
+.videoCardFeatured {
+  border-color: color-mix(in srgb, var(--ink) 12%, var(--line));
+  box-shadow: 0 18px 40px -22px rgba(0, 0, 0, 0.35);
+}
+
+.videoEmbedHero,
+.videoEmbedFeatured,
+.videoEmbedStandard {
+  flex: 1;
+  min-height: 0;
+  display: flex;
 }
 
 .videoThumbBtn {
@@ -772,30 +824,47 @@
   border: 0;
   background: #000;
   cursor: pointer;
-  aspect-ratio: 16 / 9;
   overflow: hidden;
 }
 
-.videoLarge .videoThumbBtn {
+.videoEmbedStandard .videoThumbBtn {
+  aspect-ratio: 16 / 9;
+  min-height: clamp(148px, 18vw, 196px);
+}
+
+.videoEmbedFeatured .videoThumbBtn {
+  aspect-ratio: 16 / 9;
+  min-height: clamp(180px, 22vw, 240px);
+}
+
+.videoEmbedHero .videoThumbBtn {
   aspect-ratio: auto;
-  height: 100%;
-  min-height: 320px;
+  min-height: clamp(320px, 36vw, 460px);
+}
+
+.videoEmbedHero .videoThumb {
+  object-position: center 38%;
 }
 
 .videoThumb {
   object-fit: cover;
-  transition: transform 0.6s var(--ease);
+  transition: transform 0.7s var(--ease);
 }
 
 .videoThumbBtn:hover .videoThumb {
-  transform: scale(1.03);
+  transform: scale(1.04);
 }
 
 .videoOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, transparent 40%, rgba(0, 0, 0, 0.7));
-  padding: 20px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.08) 0%,
+    transparent 38%,
+    rgba(0, 0, 0, 0.78) 100%
+  );
+  padding: clamp(16px, 2vw, 24px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -806,35 +875,52 @@
 
 .videoTitle {
   font-family: var(--f-display);
-  font-size: 18px;
+  font-size: clamp(15px, 1.4vw, 18px);
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 1.2;
   margin: 0;
+  text-shadow: 0 1px 12px rgba(0, 0, 0, 0.45);
 }
 
-.videoLarge .videoTitle {
-  font-size: 24px;
+.videoEmbedHero .videoTitle {
+  font-size: clamp(20px, 2.2vw, 28px);
+}
+
+.videoEmbedFeatured .videoTitle {
+  font-size: clamp(17px, 1.8vw, 22px);
 }
 
 .videoPlayBtn {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 52px;
-  height: 52px;
+  top: clamp(14px, 1.6vw, 20px);
+  right: clamp(14px, 1.6vw, 20px);
+  width: clamp(48px, 4.5vw, 56px);
+  height: clamp(48px, 4.5vw, 56px);
   border-radius: 50%;
-  background: var(--ball);
+  background: color-mix(in srgb, var(--ball) 94%, transparent);
   color: var(--ink);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
-  transition: transform 0.3s var(--ease);
+  font-size: clamp(16px, 1.4vw, 20px);
+  padding-left: 3px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(8px);
+  transition:
+    transform 0.35s var(--ease),
+    box-shadow 0.35s var(--ease);
+}
+
+.videoEmbedHero .videoPlayBtn {
+  width: clamp(56px, 5vw, 68px);
+  height: clamp(56px, 5vw, 68px);
+  font-size: clamp(18px, 1.6vw, 24px);
 }
 
 .videoThumbBtn:hover .videoPlayBtn {
   transform: scale(1.08);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.34);
 }
 
 .videoEmbed {
@@ -843,6 +929,11 @@
   height: 100%;
   border: 0;
   display: block;
+}
+
+.videoEmbedHero .videoEmbed {
+  aspect-ratio: auto;
+  min-height: clamp(320px, 36vw, 460px);
 }
 
 /* -------------------- Gallery -------------------- */
@@ -1067,9 +1158,10 @@
 
 .contactGrid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;
   max-width: 720px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1078,6 +1170,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  min-width: 0;
   padding: 20px 24px;
   border: 1px solid var(--line-on-deep, rgba(255, 255, 255, 0.14));
   border-radius: var(--r-lg);
@@ -1094,6 +1187,15 @@
   border-color: var(--ball);
 }
 
+.contactCard .arrow {
+  flex-shrink: 0;
+}
+
+.contactCardBody {
+  min-width: 0;
+  flex: 1;
+}
+
 .contactLabel {
   font-size: 11px;
   letter-spacing: 0.14em;
@@ -1108,6 +1210,7 @@
   font-weight: 600;
   letter-spacing: -0.01em;
   color: var(--ink-on-deep);
+  overflow-wrap: anywhere;
 }
 
 .contactCta {
@@ -1122,8 +1225,38 @@
   .heroGrid,
   .coachLayout,
   .systemLayout,
-  .videoGrid {
+  .videoBento {
     grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    min-height: 0;
+  }
+  .videoCellHero,
+  .videoCellSideTop,
+  .videoCellSideBottom,
+  .videoCellFeatured,
+  .videoCellSideExtra {
+    grid-column: 1;
+    grid-row: auto;
+  }
+  .videoCellHero {
+    order: 1;
+  }
+  .videoCellFeatured {
+    order: 2;
+  }
+  .videoCellSideTop {
+    order: 3;
+  }
+  .videoCellSideBottom {
+    order: 4;
+  }
+  .videoCellSideExtra {
+    order: 5;
+  }
+  .videoEmbedHero .videoThumbBtn,
+  .videoEmbedHero .videoEmbed {
+    min-height: 0;
+    aspect-ratio: 16 / 9;
   }
   .systemCopy {
     position: static;
@@ -1137,14 +1270,6 @@
   }
   .galleryGrid {
     grid-template-columns: repeat(4, 1fr);
-  }
-  .videoGrid > *:first-child,
-  .videoLarge {
-    grid-row: auto;
-  }
-  .videoLarge .videoThumbBtn {
-    aspect-ratio: 16 / 9;
-    min-height: 0;
   }
 }
 
@@ -1168,7 +1293,13 @@
   .programGrid,
   .reviewsGrid,
   .contactGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
+  }
+  .contactCard {
+    padding: 18px 20px;
+  }
+  .contactValue {
+    font-size: clamp(16px, 4.2vw, 20px);
   }
   .galleryGrid {
     grid-template-columns: repeat(2, 1fr);
