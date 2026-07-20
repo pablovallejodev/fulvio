@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import styles from "@/styles/Navbar.module.css";
 
@@ -21,8 +22,18 @@ export default function NavbarComponent({ lang }: { lang: Locale }) {
     <header className={styles["header"]}>
       <div className={`df-shell ${styles["shell"]}`}>
         <Link href={`/${lang}` as never} className={styles["brand"]}>
-          <span className={styles["brandName"]}>{t.brand_name}</span>
-          <span className={styles["brandDescriptor"]}>{t.brand_descriptor}</span>
+          <Image
+            src="/icons/ball.png"
+            alt=""
+            width={32}
+            height={32}
+            className={styles["brandIcon"]}
+            priority
+          />
+          <span className={styles["brandText"]}>
+            <span className={styles["brandName"]}>{t.brand_name}</span>
+            <span className={styles["brandDescriptor"]}>{t.brand_descriptor}</span>
+          </span>
         </Link>
 
         <nav className={styles["nav"]} aria-label="Primary">

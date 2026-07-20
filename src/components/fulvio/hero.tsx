@@ -33,7 +33,7 @@ export default function HeroSection({ lang }: { lang: Locale }) {
               <h1 id="hero-title" className={styles["heroTitle"]}>
                 {t.hero_title_1}
                 <br />
-                <span className={styles["emClay"]}>{t.hero_title_2}</span>
+                <span className={styles["emBall"]}>{t.hero_title_2}</span>
                 <br />
                 <span className={styles["heroVamos"]}>{t.hero_vamos}</span>
               </h1>

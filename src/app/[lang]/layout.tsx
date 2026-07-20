@@ -2,8 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { LOCALES, pickLocale } from "@/i18n/config";
 import { headers } from "next/headers";
 import Script from "next/script";
-import { Bricolage_Grotesque, Inter } from "next/font/google";
+import { Mulish } from "next/font/google";
 import { GENERATE_METADATA, LayoutProps } from "@/constants/seo/metadata";
+import "@/styles/global.css";
 
 export const dynamicParams = false;
 
@@ -25,17 +26,11 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-const display = Bricolage_Grotesque({
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-display",
-  display: "swap",
-});
-
-const body = Inter({
+const mulish = Mulish({
   subsets: ["latin", "latin-ext", "cyrillic"],
   weight: ["400", "500", "600", "700"],
-  variable: "--font-body",
+  style: ["normal", "italic"],
+  variable: "--font-mulish",
   display: "swap",
 });
 
@@ -46,7 +41,7 @@ export default async function LangLayout({ children, params }: LayoutProps) {
   const nonce = h.get("x-nonce") ?? undefined;
 
   return (
-    <html lang={lang} className={`${display.variable} ${body.variable}`}>
+    <html lang={lang} className={mulish.variable}>
       <body>
         {children}
         <Script

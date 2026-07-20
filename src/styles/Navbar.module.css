@@ -3,7 +3,7 @@
   top: 0;
   z-index: 50;
   width: 100%;
-  background: rgba(250, 246, 239, 0.72);
+  background: rgba(15, 18, 16, 0.85);
   backdrop-filter: saturate(180%) blur(14px);
   -webkit-backdrop-filter: saturate(180%) blur(14px);
   border-bottom: 1px solid var(--line);
@@ -19,12 +19,23 @@
 
 .brand {
   display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: var(--ink-on-deep);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.brandIcon {
+  flex-shrink: 0;
+}
+
+.brandText {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0;
-  color: var(--ink);
-  text-decoration: none;
-  line-height: 1;
 }
 
 .brandName {
@@ -32,14 +43,14 @@
   font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: var(--ink);
+  color: var(--ink-on-deep);
 }
 
 .brandDescriptor {
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 0.06em;
-  color: var(--clay);
+  color: var(--ball);
   margin-top: 2px;
 }
 
@@ -65,14 +76,14 @@
   right: 0;
   bottom: -6px;
   height: 2px;
-  background: var(--clay);
+  background: var(--ball);
   transform: scaleX(0);
   transform-origin: left;
   transition: transform 0.25s var(--ease);
 }
 
 .navLink:hover {
-  color: var(--ink);
+  color: var(--ink-on-deep);
 }
 
 .navLink:hover::after {
@@ -92,8 +103,8 @@
   font-family: var(--f-body);
   font-size: 14px;
   font-weight: 600;
-  color: var(--paper);
-  background: var(--ink);
+  color: var(--ink);
+  background: var(--ball);
   border-radius: 999px;
   transition:
     background 0.25s var(--ease),
@@ -101,7 +112,7 @@
 }
 
 .cta:hover {
-  background: var(--clay);
+  background: var(--ball-deep);
   transform: translateY(-1px);
 }
 

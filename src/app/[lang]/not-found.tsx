@@ -28,7 +28,7 @@ export default async function NotFound() {
           fontWeight: 700,
           letterSpacing: "0.16em",
           textTransform: "uppercase",
-          color: "#d95a2a",
+          color: "#dfe843",
         }}
       >
         404 · Vamos
@@ -47,8 +47,8 @@ export default async function NotFound() {
         style={{
           display: "inline-flex",
           padding: "14px 24px",
-          background: "#0f1210",
-          color: "#faf6ef",
+          background: "#dfe843",
+          color: "#0f1210",
           borderRadius: 999,
           fontWeight: 600,
           fontSize: 14,

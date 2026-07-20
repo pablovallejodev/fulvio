@@ -5,7 +5,7 @@
 .page {
   min-height: 100vh;
   background: var(--paper);
-  color: var(--ink);
+  color: var(--ink-on-deep);
   isolation: isolate;
 }
 
@@ -24,6 +24,7 @@
 .sectionDark {
   background: var(--ink);
   color: var(--ink-on-deep);
+  border-block: 1px solid var(--line);
 }
 
 .sectionSand {
@@ -47,7 +48,7 @@
   font-weight: 600;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  color: var(--clay);
+  color: var(--ball);
 }
 
 .eyebrow::before {
@@ -100,16 +101,12 @@
 
 /* -------------------- Emphasis type -------------------- */
 
-.emClay {
-  color: var(--clay);
+.emBall {
+  color: var(--ball);
 }
 
 .emCourt {
   color: var(--court);
-}
-
-.emBall {
-  color: var(--ball-deep);
 }
 
 .italic {
@@ -142,33 +139,33 @@
 }
 
 .btnPrimary {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--ball);
+  color: var(--ink);
 }
 .btnPrimary:hover {
-  background: var(--clay);
+  background: var(--ball-deep);
   transform: translateY(-1px);
 }
 
 .btnSecondary {
   background: transparent;
-  color: var(--ink);
+  color: var(--ink-on-deep);
   border-color: var(--line-strong);
 }
 .btnSecondary:hover {
-  border-color: var(--ink);
+  border-color: var(--ink-on-deep);
   transform: translateY(-1px);
 }
 
 .btnGhost {
   background: transparent;
-  color: var(--ink);
+  color: var(--ink-on-deep);
   min-height: 40px;
   padding: 0 16px;
   font-size: 14px;
 }
 .btnGhost:hover {
-  color: var(--clay);
+  color: var(--ball);
 }
 
 .sectionDark .btnPrimary {
@@ -176,12 +173,12 @@
   color: var(--ink);
 }
 .sectionDark .btnPrimary:hover {
-  background: var(--clay);
-  color: var(--paper);
+  background: var(--ball-deep);
+  color: var(--ink);
 }
 
 .sectionDark .btnSecondary {
-  color: var(--paper);
+  color: var(--ink-on-deep);
   border-color: var(--line-on-deep, rgba(255, 255, 255, 0.2));
 }
 
@@ -217,7 +214,7 @@
   background:
     radial-gradient(
       ellipse 60% 40% at 80% 20%,
-      var(--clay-soft),
+      var(--ball-soft),
       transparent 60%
     ),
     radial-gradient(
@@ -248,7 +245,7 @@
   padding: 8px 14px;
   border: 1px solid var(--line);
   border-radius: var(--r-pill);
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(6px);
   font-size: 13px;
   font-weight: 600;
@@ -261,8 +258,8 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: var(--clay);
-  box-shadow: 0 0 0 4px rgba(217, 90, 42, 0.18);
+  background: var(--ball);
+  box-shadow: 0 0 0 4px rgba(223, 232, 67, 0.18);
 }
 
 .heroTitle {
@@ -271,14 +268,14 @@
   font-weight: 600;
   letter-spacing: -0.04em;
   line-height: 0.95;
-  color: var(--ink);
+  color: var(--ink-on-deep);
 }
 
 .heroVamos {
   display: inline-block;
   font-style: italic;
   font-weight: 600;
-  color: var(--clay);
+  color: var(--ball);
   transform-origin: left bottom;
 }
 
@@ -315,7 +312,7 @@
   background: rgba(15, 18, 16, 0.6);
   backdrop-filter: blur(12px);
   border-radius: var(--r-md);
-  color: var(--paper);
+  color: var(--ink-on-deep);
   font-size: 13px;
   font-weight: 500;
 }
@@ -350,7 +347,7 @@
   font-size: clamp(24px, 3.5vw, 40px);
   font-weight: 500;
   letter-spacing: -0.02em;
-  color: var(--ink);
+  color: var(--ink-on-deep);
 }
 
 .heroMarqueeItem {
@@ -364,7 +361,7 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: var(--clay);
+  background: var(--ball);
 }
 
 @keyframes marquee {
@@ -383,6 +380,7 @@
   background: var(--ink);
   color: var(--ink-on-deep);
   overflow: hidden;
+  border-block: 1px solid var(--line);
 }
 
 .manifestoInner {
@@ -400,7 +398,7 @@
   font-weight: 500;
   letter-spacing: -0.025em;
   line-height: 1.1;
-  color: var(--paper);
+  color: var(--ink-on-deep);
 }
 
 .pullQuote .accent {
@@ -420,7 +418,7 @@
   border-radius: var(--r-pill);
   font-size: 14px;
   font-weight: 500;
-  color: var(--paper);
+  color: var(--ink-on-deep);
 }
 
 /* -------------------- Trust bar -------------------- */
@@ -456,7 +454,7 @@
   font-family: var(--f-display);
   font-size: clamp(18px, 1.6vw, 22px);
   font-weight: 600;
-  color: var(--ink);
+  color: var(--ink-on-deep);
   letter-spacing: -0.01em;
 }
 
@@ -491,7 +489,7 @@
   font-size: 13px;
   font-weight: 500;
   color: var(--ink-soft);
-  background: var(--paper);
+  background: var(--sand);
 }
 
 .court {
@@ -521,16 +519,16 @@
   border: 1px solid var(--line);
 }
 .zone1 {
-  background: var(--clay);
-  color: var(--paper);
-  border: 1px solid var(--clay-deep);
+  background: var(--ball);
+  color: var(--ink);
+  border: 1px solid var(--ball-deep);
 }
 .zone1 .zoneTitle,
 .zone1 .zoneText {
-  color: var(--paper);
+  color: var(--ink);
 }
 .zone1 .zoneLabel {
-  color: var(--ball);
+  color: var(--ink-soft);
 }
 
 .zoneNum {
@@ -546,7 +544,7 @@
 }
 
 .zone1 .zoneNum {
-  color: var(--ball);
+  color: var(--ink);
 }
 
 .zoneLabel {
@@ -564,7 +562,7 @@
   font-weight: 600;
   letter-spacing: -0.02em;
   margin: 0 0 8px;
-  color: var(--ink);
+  color: var(--ink-on-deep);
 }
 
 .zoneText {
@@ -590,7 +588,7 @@
   padding: 24px 20px;
   border: 1px solid var(--line);
   border-radius: var(--r-lg);
-  background: var(--paper);
+  background: var(--sand);
 }
 
 .flowNum {
@@ -598,7 +596,7 @@
   font-size: 40px;
   font-weight: 500;
   line-height: 1;
-  color: var(--clay);
+  color: var(--ball);
   letter-spacing: -0.04em;
 }
 
@@ -606,7 +604,7 @@
   font-family: var(--f-display);
   font-size: 18px;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--ink-on-deep);
   letter-spacing: -0.01em;
 }
 
@@ -634,7 +632,7 @@
 }
 .program:hover {
   transform: translateY(-4px);
-  border-color: var(--clay);
+  border-color: var(--ball);
 }
 
 .programNum {
@@ -642,7 +640,7 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.14em;
-  color: var(--clay);
+  color: var(--ball);
 }
 
 .programTitle {
@@ -650,7 +648,7 @@
   font-size: var(--t-h4);
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: var(--ink);
+  color: var(--ink-on-deep);
   margin: 0;
 }
 
@@ -701,13 +699,13 @@
   font-weight: 600;
   letter-spacing: -0.03em;
   line-height: 0.95;
-  color: var(--ink);
+  color: var(--ink-on-deep);
   margin: 0 0 8px;
 }
 
 .coachRole {
   font-size: var(--t-lead);
-  color: var(--clay);
+  color: var(--ball);
   font-style: italic;
   margin: 0 0 20px;
 }
@@ -753,7 +751,7 @@
   font-family: var(--f-display);
   font-size: 18px;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--ink-on-deep);
   letter-spacing: -0.01em;
 }
 
@@ -819,7 +817,7 @@
   justify-content: flex-end;
   gap: 12px;
   pointer-events: none;
-  color: var(--paper);
+  color: var(--ink-on-deep);
 }
 
 .videoTitle {
@@ -936,7 +934,7 @@
   font-weight: 500;
   letter-spacing: -0.01em;
   line-height: 1.35;
-  color: var(--ink);
+  color: var(--ink-on-deep);
   margin: 0;
 }
 
@@ -957,7 +955,7 @@
   justify-content: center;
   font-size: 14px;
   font-weight: 700;
-  color: var(--ink);
+  color: var(--ink-on-deep);
 }
 
 .reviewAuthor {
@@ -969,7 +967,7 @@
 .reviewName {
   font-size: 14px;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--ink-on-deep);
 }
 
 .reviewOrigin {
@@ -983,10 +981,10 @@
   gap: 6px;
   font-size: 13px;
   font-weight: 500;
-  color: var(--clay);
+  color: var(--ball);
 }
 .reviewLink:hover {
-  color: var(--clay-deep);
+  color: var(--ball-deep);
 }
 
 /* -------------------- FAQ -------------------- */
@@ -1013,7 +1011,7 @@
   font-size: clamp(18px, 1.8vw, 22px);
   font-weight: 600;
   letter-spacing: -0.015em;
-  color: var(--ink);
+  color: var(--ink-on-deep);
   transition: color 0.2s var(--ease);
 }
 
@@ -1022,7 +1020,7 @@
 }
 
 .faqSummary:hover {
-  color: var(--clay);
+  color: var(--ball);
 }
 
 .faqIcon {
@@ -1033,7 +1031,7 @@
   align-items: center;
   justify-content: center;
   font-size: 20px;
-  color: var(--clay);
+  color: var(--ball);
   transition: transform 0.3s var(--ease);
 }
 
@@ -1091,7 +1089,7 @@
   border: 1px solid var(--line-on-deep, rgba(255, 255, 255, 0.14));
   border-radius: var(--r-lg);
   background: rgba(255, 255, 255, 0.04);
-  color: var(--paper);
+  color: var(--ink-on-deep);
   text-decoration: none;
   transition:
     background-color 0.25s var(--ease),
@@ -1116,7 +1114,7 @@
   font-size: 20px;
   font-weight: 600;
   letter-spacing: -0.01em;
-  color: var(--paper);
+  color: var(--ink-on-deep);
 }
 
 .contactCta {

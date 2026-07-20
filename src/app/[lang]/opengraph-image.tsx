@@ -39,6 +39,13 @@ const COPY: Record<Locale, { eyebrow: string; title: string; subtitle: string }>
   },
 };
 
+const MULISH_600 =
+  "https://fonts.gstatic.com/s/mulish/v18/1Ptyg83HX_SGhgqO0yLcmjzUAuWexU1WwaA.ttf";
+const MULISH_700 =
+  "https://fonts.gstatic.com/s/mulish/v18/1Ptyg83HX_SGhgqO0yLcmjzUAuWexXRWwaA.ttf";
+const MULISH_700_ITALIC =
+  "https://fonts.gstatic.com/s/mulish/v18/1Ptwg83HX_SGhgqk2hAjQlW_mEuZ0FsSzuSvHg.ttf";
+
 export default async function OG({
   params,
 }: {
@@ -46,6 +53,11 @@ export default async function OG({
 }) {
   const lang = pickLocale((await params).lang);
   const copy = COPY[lang];
+  const [mulish600, mulish700, mulish700Italic] = await Promise.all([
+    fetch(MULISH_600).then((res) => res.arrayBuffer()),
+    fetch(MULISH_700).then((res) => res.arrayBuffer()),
+    fetch(MULISH_700_ITALIC).then((res) => res.arrayBuffer()),
+  ]);
 
   return new ImageResponse(
     (
@@ -59,7 +71,7 @@ export default async function OG({
           padding: "80px 96px",
           background: "#0f1210",
           color: "#faf6ef",
-          fontFamily: "system-ui, sans-serif",
+          fontFamily: "Mulish",
           position: "relative",
         }}
       >
@@ -71,7 +83,7 @@ export default async function OG({
             width: 520,
             height: 520,
             borderRadius: "50%",
-            background: "radial-gradient(circle, #d95a2a 0%, transparent 70%)",
+            background: "radial-gradient(circle, #dfe843 0%, transparent 70%)",
             opacity: 0.6,
           }}
         />
@@ -94,7 +106,7 @@ export default async function OG({
               width: 10,
               height: 10,
               borderRadius: 5,
-              background: "#d95a2a",
+              background: "#dfe843",
               display: "inline-block",
             }}
           />
@@ -159,6 +171,13 @@ export default async function OG({
         </div>
       </div>
     ),
-    { ...size },
+    {
+      ...size,
+      fonts: [
+        { name: "Mulish", data: mulish600, weight: 600, style: "normal" },
+        { name: "Mulish", data: mulish700, weight: 700, style: "normal" },
+        { name: "Mulish", data: mulish700Italic, weight: 700, style: "italic" },
+      ],
+    },
   );
 }
