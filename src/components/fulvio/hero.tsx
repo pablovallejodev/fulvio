@@ -24,12 +24,6 @@ export default function HeroSection({ lang }: { lang: Locale }) {
         <div className={styles["heroGrid"]}>
           <div className={styles["heroCopy"]}>
             <Reveal delay={0}>
-              <span className={styles["heroTag"]}>
-                <span className={styles["heroPin"]} aria-hidden="true" />
-                {t.hero_tag}
-              </span>
-            </Reveal>
-            <Reveal delay={0.05}>
               <h1 id="hero-title" className={styles["heroTitle"]}>
                 {t.hero_title_1}
                 <br />
@@ -39,7 +33,13 @@ export default function HeroSection({ lang }: { lang: Locale }) {
               </h1>
             </Reveal>
             <Reveal delay={0.15}>
-              <p className={styles["heroSubtitle"]}>{t.hero_subtitle}</p>
+              <p className={styles["heroSubtitle"]}>
+                {t.hero_subtitle}{" "}
+                <span className={styles["emBall"]}>
+                  {t.hero_subtitle_location}
+                </span>
+                {t.hero_subtitle_after}
+              </p>
             </Reveal>
             <Reveal delay={0.25}>
               <div className={styles["actions"]}>
@@ -82,21 +82,27 @@ export default function HeroSection({ lang }: { lang: Locale }) {
                   <br />
                   <strong>{t.hero_badge_value}</strong>
                 </span>
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  aria-hidden="true"
+                <Link
+                  href={{ pathname: `/${lang}`, hash: "coach" }}
+                  className={styles["heroBadgeLink"]}
+                  aria-label={t.nav_coach}
                 >
-                  <path
-                    d="M5 12L19 12M19 12L13 6M19 12L13 18"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M5 12L19 12M19 12L13 6M19 12L13 18"
+                      stroke="currentColor"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </Link>
               </div>
             </div>
           </Reveal>

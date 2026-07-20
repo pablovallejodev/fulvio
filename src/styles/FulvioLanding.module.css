@@ -327,6 +327,17 @@
   color: var(--ball);
 }
 
+.heroBadgeLink {
+  flex-shrink: 0;
+  display: flex;
+  color: inherit;
+  transition: transform 0.2s ease;
+}
+
+.heroBadgeLink:hover {
+  transform: translateX(4px);
+}
+
 .heroMarquee {
   margin-top: clamp(40px, 6vw, 64px);
   padding: 20px 0;
@@ -518,7 +529,11 @@
   border: 1px solid var(--line);
 }
 .zone2 {
-  background: linear-gradient(120deg, rgba(132, 96, 231, 0.14), transparent 70%);
+  background: linear-gradient(
+    120deg,
+    rgba(132, 96, 231, 0.14),
+    transparent 70%
+  );
   border: 1px solid var(--line);
 }
 .zone1 {
@@ -675,7 +690,10 @@
   aspect-ratio: 4 / 5;
   border-radius: var(--r-xl);
   overflow: hidden;
-  background: linear-gradient(160deg, var(--court), var(--court-deep));
+  background-color: var(--court);
+  background-image: url("/backgrounds/verde-raquetas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .coachPortraitImg {

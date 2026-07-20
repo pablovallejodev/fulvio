@@ -17,6 +17,8 @@ export type FulvioDictionary = {
   hero_title_2: string;
   hero_vamos: string;
   hero_subtitle: string;
+  hero_subtitle_location: string;
+  hero_subtitle_after: string;
   hero_cta_primary: string;
   hero_cta_secondary: string;
   hero_badge_label: string;
@@ -206,7 +208,10 @@ const en: FulvioDictionary = {
   hero_title_2: "Spanish way.",
   hero_vamos: "Vamos!",
   hero_subtitle:
-    "One Italian coach. The Spanish tennis method. Twenty-five years on court across three continents. Personal sessions in Phuket for players who want to fight for every point.",
+    "One Italian coach. The Spanish tennis method. Twenty-five years on court across three continents.",
+  hero_subtitle_location: "Phuket, Thailand.",
+  hero_subtitle_after:
+    " Personal sessions in Phuket for players who want to fight for every point.",
   hero_cta_primary: "Message on WhatsApp",
   hero_cta_secondary: "See the method",
   hero_badge_label: "Now training in",
@@ -431,7 +436,10 @@ const es: FulvioDictionary = {
   hero_title_2: "estilo español.",
   hero_vamos: "Vamos!",
   hero_subtitle:
-    "Un entrenador italiano. El método español de tenis. Veinticinco años de pista en tres continentes. Sesiones personales en Phuket para jugadores que quieren luchar cada punto.",
+    "Un entrenador italiano. El método español de tenis. Veinticinco años de pista en tres continentes.",
+  hero_subtitle_location: "Phuket, Tailandia.",
+  hero_subtitle_after:
+    " Sesiones personales en Phuket para jugadores que quieren luchar cada punto.",
   hero_cta_primary: "Escribir por WhatsApp",
   hero_cta_secondary: "Ver el método",
   hero_badge_label: "Entrenando ahora en",
@@ -650,7 +658,10 @@ const it: FulvioDictionary = {
   hero_title_2: "spagnola.",
   hero_vamos: "Vamos!",
   hero_subtitle:
-    "Un coach italiano. Il metodo spagnolo del tennis. Venticinque anni di campo in tre continenti. Sessioni personali a Phuket per chi vuole giocare ogni punto.",
+    "Un coach italiano. Il metodo spagnolo del tennis. Venticinque anni di campo in tre continenti.",
+  hero_subtitle_location: "Phuket, Thailandia.",
+  hero_subtitle_after:
+    " Sessioni personali a Phuket per chi vuole giocare ogni punto.",
   hero_cta_primary: "Scrivi su WhatsApp",
   hero_cta_secondary: "Vedi il metodo",
   hero_badge_label: "In campo ora a",
@@ -869,7 +880,10 @@ const ru: FulvioDictionary = {
   hero_title_2: "испански.",
   hero_vamos: "Vamos!",
   hero_subtitle:
-    "Итальянский тренер. Испанский метод тенниса. Двадцать пять лет на корте на трёх континентах. Персональные тренировки в Пхукете для игроков, которые готовы бороться за каждый мяч.",
+    "Итальянский тренер. Испанский метод тенниса. Двадцать пять лет на корте на трёх континентах.",
+  hero_subtitle_location: "Пхукет, Таиланд.",
+  hero_subtitle_after:
+    " Персональные тренировки в Пхукете для игроков, которые готовы бороться за каждый мяч.",
   hero_cta_primary: "Написать в WhatsApp",
   hero_cta_secondary: "Смотреть метод",
   hero_badge_label: "Сейчас тренирую в",
@@ -1085,7 +1099,10 @@ const th: FulvioDictionary = {
   hero_title_2: "สเปน",
   hero_vamos: "Vamos!",
   hero_subtitle:
-    "โค้ชอิตาเลียนหนึ่งคน เมธอดเทนนิสสเปน ยี่สิบห้าปีบนคอร์ตในสามทวีป ฝึกส่วนตัวที่ภูเก็ตสำหรับผู้เล่นที่ต้องการสู้ทุกแต้ม",
+    "โค้ชอิตาเลียนหนึ่งคน เมธอดเทนนิสสเปน ยี่สิบห้าปีบนคอร์ตในสามทวีป",
+  hero_subtitle_location: "ภูเก็ต, ประเทศไทย.",
+  hero_subtitle_after:
+    " ฝึกส่วนตัวที่ภูเก็ตสำหรับผู้เล่นที่ต้องการสู้ทุกแต้ม",
   hero_cta_primary: "ทักทาย WhatsApp",
   hero_cta_secondary: "ดูเมธอด",
   hero_badge_label: "ตอนนี้สอนที่",
@@ -1295,8 +1312,9 @@ const zh: FulvioDictionary = {
   hero_title_1: "以西班牙",
   hero_title_2: "方式训练。",
   hero_vamos: "Vamos!",
-  hero_subtitle:
-    "一位意大利教练。西班牙网球方法。二十五年球场经验，横跨三大洲。在普吉一对一，为愿意为每一分而战的球员而设。",
+  hero_subtitle: "一位意大利教练。西班牙网球方法。二十五年球场经验，横跨三大洲。",
+  hero_subtitle_location: "普吉，泰国。",
+  hero_subtitle_after: "在普吉一对一，为愿意为每一分而战的球员而设。",
   hero_cta_primary: "WhatsApp 联系",
   hero_cta_secondary: "了解方法",
   hero_badge_label: "当前授课地",
