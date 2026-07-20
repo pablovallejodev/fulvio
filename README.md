@@ -1,114 +1,96 @@
-# Deepfriend — Frontend
+# Fulvio Coach — Spanish Method Tennis Academy
 
-**Live:** [dfbubbles.com](https://dfbubbles.com) · Deployed on [Vercel](https://vercel.com)
+**Live:** [spanishtennis.info](https://www.spanishtennis.info) · Deployed on [Vercel](https://vercel.com)
 
-The official web frontend for **Deepfriend**, a CBT-based AI emotional companion. Talk to Blue — an AI companion grounded in Cognitive Behavioral Therapy (CBT) — for anxiety, stress, and insomnia. Private, available 24/7, and your data is never sold.
-
----
-
-## What is Deepfriend?
-
-Deepfriend is an independent mental health project built around **Blue**, an AI emotional companion designed with evidence-based CBT methodology. No investors. No data selling. No small print.
-
-- Emotional support grounded in CBT science
-- Available around the clock
-- Full privacy — HTTPS end-to-end, no third-party data sharing
-- Multilingual: **Español · English · Deutsch**
+One-page site for **Fulvio Coach**, an Italian tennis coach based in Phuket
+who teaches the Spanish tennis method (zones 3-2-1, footwork, intensity)
+to juniors, adults and visiting players. *Vamos.*
 
 ---
 
-## Tech Stack
+## What this site is
+
+A single, multilingual landing page whose job is exactly one thing:
+get a serious player to open WhatsApp and book a session with Fulvio.
+
+- One page, six locales: **en · es · it · th · zh · ru**
+- Editorial design, tennis palette (clay · court · ball)
+- Personal touches: Fulvio, Rafa Nadal aesthetic, Tarzán the dog, motorbike
+- SEO + AI-search ready: rich JSON-LD (Person, LocalBusiness, Course, FAQ,
+  Review, Video), OpenGraph per locale, hreflang, sitemap
+
+## Tech stack
 
 | Layer | Technology |
-|---|---|
+| --- | --- |
 | Framework | [Next.js 16](https://nextjs.org) (App Router, Turbopack) |
 | UI | [React 19](https://react.dev) + TypeScript |
-| State | Redux Toolkit + React Redux |
-| Content | MDX (`@next/mdx`) |
-| i18n | Custom — ES / EN / DE |
+| Motion | [Framer Motion](https://motion.dev) |
+| i18n | Custom — 6 locales, cookie-persisted, `Accept-Language` fallback |
+| SEO | Dynamic metadata, JSON-LD, per-locale OG images |
 | Analytics | Vercel Analytics + Speed Insights |
-| Deployment | [Vercel](https://vercel.com) |
+| Deployment | Vercel |
 
----
+## Project structure
 
-## Project Structure
-
-    deepfriend/
-    ├── src/
-    │   ├── app/
-    │   │   ├── [lang]/          # Locale-scoped routes (es, en, de)
-    │   │   │   ├── page.tsx     # Home
-    │   │   │   ├── about/
-    │   │   │   ├── contact/
-    │   │   │   ├── legal-terms/
-    │   │   │   └── privacy-policy/
-    │   │   ├── sitemap.ts
-    │   │   ├── robots.ts
-    │   │   └── manifest.ts
-    │   ├── constants/
-    │   │   ├── routes/
-    │   │   ├── seo/
-    │   │   └── translations/
-    │   └── i18n/
-    └── package.json
-
----
-
-## Getting Started
-
-### Prerequisites
-
-- Node.js ≥ 18
-- npm, yarn, or pnpm
-
-### Install & Run
-
-```bash
-# Clone the repository
-git clone https://github.com/pablovallejodev/front.git
-cd front/deepfriend
-
-# Install dependencies
-npm install
-
-# Start development server (with Turbopack)
-npm run dev
+```
+.
+├── src/
+│   ├── app/
+│   │   ├── [lang]/                  # Locale-scoped landing
+│   │   │   ├── page.tsx
+│   │   │   ├── layout.tsx
+│   │   │   ├── not-found.tsx
+│   │   │   └── opengraph-image.tsx
+│   │   ├── layout.tsx
+│   │   ├── manifest.ts
+│   │   ├── robots.ts
+│   │   └── sitemap.ts
+│   ├── components/
+│   │   ├── basic/                   # Navbar · Footer · LangSwitcher
+│   │   └── fulvio/                  # Hero · Manifesto · SpanishSystem · …
+│   ├── constants/
+│   │   ├── routes/
+│   │   ├── seo/
+│   │   ├── translations/            # Full 6-locale dictionary
+│   │   └── site.ts                  # Contact, videos, photos
+│   ├── i18n/
+│   ├── proxy.ts                     # Locale detection + CSP
+│   └── styles/                      # global.css + CSS Modules
+├── public/
+│   └── photos/                      # Drop Fulvio's real photos here
+└── package.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+## Getting started
 
-### Available Scripts
+```bash
+pnpm install
+pnpm dev            # http://localhost:3000
+pnpm build          # production build
+pnpm lint
+```
 
-| Command | Description |
-|---|---|
-| `npm run dev` | Start dev server with Turbopack |
-| `npm run build` | Build for production |
-| `npm start` | Start production server |
-| `npm run lint` | Run ESLint |
+## Photos to provide
 
----
+Drop the following files under `public/photos/` — until they exist, the site
+falls back to thumbnails from Fulvio's own YouTube channel.
 
-## Deployment
+| File | What it should show |
+| --- | --- |
+| `fulvio-portrait.jpg` | Fulvio alone, on court, editorial portrait (hero). 4:5, ≥1200px short side. |
+| `fulvio-coach.jpg` | Fulvio coaching a player. 4:5, ≥1200px short side. |
+| `fulvio-rafa.jpg` | Fulvio with Rafa Nadal (Spanish method inspiration). 4:3 or 16:9. |
+| `fulvio-tarzan.jpg` | Fulvio on the motorbike with Tarzán, or Tarzán by the court. 4:3. |
 
-The app is continuously deployed on **Vercel** and available at **[dfbubbles.com](https://dfbubbles.com)**.
+Use JPG or WebP under 400 KB when possible; `next/image` handles sizing.
 
----
+## Contact copy
+
+WhatsApp, email, Instagram and YouTube are centralised in
+`src/constants/site.ts`. Update there and every section, structured data
+entry and metadata reference follows.
 
 ## License
 
-This project is licensed under the **[AGPL-3.0-only](https://www.gnu.org/licenses/agpl-3.0.html)** license.
-
-**What this means in practice:**
-
-- You are free to use, modify, and distribute this code — including commercially.
-- Any modifications or derivative works **must be released under the same AGPL-3.0 license** (strong copyleft).
-- If you deploy a modified version as a **network service** (e.g. a web app or SaaS), you are also required to **publish that modified source code**. This is the key difference between AGPL and GPL.
-- In short: use it freely, but keep it open source.
-
----
-
-## Author
-
-Built with care by **Pablo Vallejo**, founder of [Deepfriend](https://dfbubbles.com).
-
-> *Hope it helps the community.*
+AGPL-3.0-only.

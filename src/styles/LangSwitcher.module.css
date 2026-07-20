@@ -1,0 +1,103 @@
+.root {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 36px;
+  padding: 0 14px;
+  font-family: var(--f-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: transparent;
+  cursor: pointer;
+  transition:
+    border-color 0.2s var(--ease),
+    color 0.2s var(--ease);
+}
+
+.trigger:hover {
+  border-color: var(--ink);
+}
+
+.chevron {
+  transition: transform 0.2s var(--ease);
+}
+
+.open .chevron {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  z-index: 60;
+  min-width: 180px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  box-shadow: var(--shadow-2);
+}
+
+.menuItem {
+  display: block;
+  width: 100%;
+  padding: 10px 12px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  text-align: left;
+  font-family: var(--f-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink);
+  cursor: pointer;
+  transition: background-color 0.15s var(--ease);
+}
+
+.menuItem:hover,
+.active {
+  background: var(--sand);
+}
+
+.active {
+  color: var(--clay);
+}
+
+.footer .trigger {
+  color: var(--paper);
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
+.footer .trigger:hover {
+  border-color: var(--paper);
+}
+
+.footer .menu {
+  background: #1a1c1a;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.footer .menuItem {
+  color: var(--paper);
+}
+
+.footer .menuItem:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.footer .active {
+  color: var(--ball);
+  background: rgba(255, 255, 255, 0.06);
+}
