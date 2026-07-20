@@ -292,7 +292,10 @@
   border-radius: var(--r-xl);
   overflow: hidden;
   box-shadow: var(--shadow-3);
-  background: linear-gradient(160deg, var(--court), var(--ink));
+  background-color: #815ee6;
+  background-image: url("/backgrounds/lila-raquetas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heroImage {
