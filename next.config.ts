@@ -44,6 +44,12 @@ const nextConfig: NextConfig = {
         source: "/:path*",
         headers: [...SECURITY_HEADERS],
       },
+      {
+        source: "/icons/:path*",
+        headers: [
+          { key: "Cross-Origin-Resource-Policy", value: "cross-origin" },
+        ],
+      },
     ];
   },
 };

@@ -37,7 +37,7 @@ export default function JsonLd({ lang }: { lang: Locale }) {
     knowsLanguage: ["it", "en", "es", "th"],
     sameAs: [CONTACT.instagram, CONTACT.youtube],
     url,
-    image: `${SITE}/opengraph-image`,
+    image: `${SITE}/icons/og-whatsapp.png`,
   };
 
   const business = {

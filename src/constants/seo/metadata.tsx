@@ -60,18 +60,18 @@ export async function GENERATE_METADATA({
       description: copy.description,
       images: [
         {
-          url: `/${lang}/opengraph-image`,
-          width: 1200,
-          height: 630,
-          alt: copy.title,
+          url: "/icons/og-whatsapp.png",
+          width: 256,
+          height: 256,
+          alt: "Fulvio Coach · Spanish Method Tennis Academy",
         },
       ],
     },
     twitter: {
-      card: "summary_large_image",
+      card: "summary",
       title: copy.title,
       description: copy.description,
-      images: [`/${lang}/opengraph-image`],
+      images: ["/icons/og-whatsapp.png"],
     },
     robots: {
       index: true,
