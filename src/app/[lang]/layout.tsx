@@ -1,10 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { LOCALES, pickLocale } from "@/i18n/config";
-import { headers } from "next/headers";
-import Script from "next/script";
 import { Mulish } from "next/font/google";
 import { GENERATE_METADATA, LayoutProps } from "@/constants/seo/metadata";
 import "@/styles/global.css";
+import { Analytics } from "@vercel/analytics/next";
+import { connection } from "next/server";
 
 export const dynamicParams = false;
 
@@ -35,21 +35,16 @@ const mulish = Mulish({
 });
 
 export default async function LangLayout({ children, params }: LayoutProps) {
+  await connection();
+  
   const raw = (await params).lang;
   const lang = pickLocale(raw);
-  const h = await headers();
-  const nonce = h.get("x-nonce") ?? undefined;
 
   return (
     <html lang={lang} className={mulish.variable}>
       <body>
         {children}
-        <Script
-          src="/_vercel/insights/script.js"
-          nonce={nonce}
-          strategy="afterInteractive"
-          data-endpoint="/_vercel/insights"
-        />
+        <Analytics />
       </body>
     </html>
   );

@@ -53,6 +53,7 @@ export function proxy(request: NextRequest) {
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set("x-nonce", nonce);
   requestHeaders.set("x-csp", csp);
+  requestHeaders.set("Content-Security-Policy", csp);
 
   const first = pathname.split("/").filter(Boolean)[0] ?? "";
 
