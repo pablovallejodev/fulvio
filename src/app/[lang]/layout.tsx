@@ -50,11 +50,6 @@ export default async function LangLayout({ children, params }: LayoutProps) {
           strategy="afterInteractive"
           data-endpoint="/_vercel/insights"
         />
-        <Script
-          src="/_vercel/speed-insights/script.js"
-          nonce={nonce}
-          strategy="afterInteractive"
-        />
       </body>
     </html>
   );
