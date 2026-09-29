@@ -8,8 +8,8 @@ export const MANIFEST: MetadataRoute.Manifest = {
   start_url: "/",
   categories: ["sports", "education", "lifestyle"],
   display: "standalone",
-  background_color: "#0f1210",
-  theme_color: "#0f1210",
+  background_color: "#fbfaf7",
+  theme_color: "#fbfaf7",
   icons: [
     { src: "/icons/ball.png", sizes: "512x512", type: "image/png" },
   ],

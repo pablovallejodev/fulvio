@@ -13,7 +13,7 @@
   font-family: var(--f-body);
   font-size: 13px;
   font-weight: 500;
-  color: var(--ink-on-deep);
+  color: var(--ink);
   border: 1px solid var(--line-strong);
   border-radius: 999px;
   background: transparent;
@@ -24,7 +24,7 @@
 }
 
 .trigger:hover {
-  border-color: var(--ink-on-deep);
+  border-color: var(--ink);
 }
 
 .chevron {
@@ -61,23 +61,23 @@
   font-family: var(--f-body);
   font-size: 14px;
   font-weight: 500;
-  color: var(--ink-on-deep);
+  color: var(--ink);
   cursor: pointer;
   transition: background-color 0.15s var(--ease);
 }
 
 .menuItem:hover,
 .active {
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--court-soft);
 }
 
 .active {
-  color: var(--ball);
+  color: var(--court-deep);
 }
 
 .footer .trigger {
   color: var(--ink-on-deep);
-  border-color: rgba(255, 255, 255, 0.16);
+  border-color: var(--line-on-deep);
 }
 
 .footer .trigger:hover {
@@ -85,8 +85,8 @@
 }
 
 .footer .menu {
-  background: var(--sand);
-  border-color: rgba(255, 255, 255, 0.08);
+  background: var(--deep);
+  border-color: var(--line-on-deep);
 }
 
 .footer .menuItem {
@@ -94,10 +94,16 @@
 }
 
 .footer .menuItem:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--deep-card);
 }
 
 .footer .active {
   color: var(--ball);
-  background: rgba(255, 255, 255, 0.06);
+  background: var(--deep-card);
+}
+
+.trigger:focus-visible,
+.menuItem:focus-visible {
+  outline: 2px solid var(--court);
+  outline-offset: 2px;
 }

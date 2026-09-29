@@ -18,7 +18,7 @@ export const CONTACT = {
 export const PHOTOS = {
   /** Portrait for the hero. Real photo of Fulvio alone. */
   heroPortrait: {
-    src: "/photos/fulvio-rafa.jpg",
+    src: "/photos/fulvio-portrait.jpg",
     fallback: "https://img.youtube.com/vi/JMYoxqG4ebc/maxresdefault.jpg",
     hint: "Portrait of Fulvio on court in Phuket",
   },

@@ -1,31 +1,42 @@
 /* ============================================================
    Fulvio Coach — Spanish Method Academy · Phuket
-   Design system: court · ball
+   Design system: court · clay · ball
    ============================================================ */
 
 :root {
   /* Surfaces */
-  --paper: #0f1210;
-  --sand: #1a1d1b;
-  --ink: #0f1210;
-  --ink-soft: #c5c9c6;
-  --slate: #9a9e9c;
-  --mute: #6e726f;
-  --line: rgba(255, 255, 255, 0.1);
-  --line-strong: rgba(255, 255, 255, 0.18);
+  --paper: #fbfaf7;
+  --sand: #f1ece3;
+  --ink: #17231e;
+  --ink-soft: #4f5d56;
+  --slate: #5f6d65;
+  --mute: #68756e;
+  --line: #dedbd3;
+  --line-strong: #c7c4ba;
+
+  /* Dark surfaces are intentionally separate from readable light-surface ink. */
+  --deep: #10221e;
+  --deep-card: #1a302a;
+  --deep-card-hover: #26443b;
+  --line-on-deep: #365149;
 
   /* Brand colors — Rafa/Spanish tennis palette */
-  --court: #8460e7;
-  --court-deep: #5534b8;
-  --court-soft: rgba(132, 96, 231, 0.08);
-  --ball: #dfe843;
-  --ball-deep: #b8bf2e;
-  --ball-soft: rgba(223, 232, 67, 0.08);
+  --court: #318373;
+  --court-deep: #1d5d51;
+  --court-soft: #e5f0eb;
+  --clay: #c87355;
+  --clay-deep: #9f5039;
+  --clay-soft: #f4e5de;
+  --ball: #d9e545;
+  --ball-deep: #aab72e;
+  --ball-ink: #45510e;
+  --ball-soft: #f2f5d5;
   --white: #ffffff;
 
   /* Ink on dark */
-  --ink-on-deep: #faf6ef;
-  --ink-on-deep-soft: rgba(250, 246, 239, 0.7);
+  --ink-on-deep: #f8f5ee;
+  --ink-on-deep-soft: #c6d1cb;
+  --ink-on-deep-muted: #94a39b;
 
   /* Radii */
   --r-sm: 6px;
@@ -43,9 +54,9 @@
   --ease-in: cubic-bezier(0.6, 0, 0.8, 0.2);
 
   /* Shadows */
-  --shadow-1: 0 1px 2px rgba(0, 0, 0, 0.3);
-  --shadow-2: 0 8px 24px rgba(0, 0, 0, 0.4);
-  --shadow-3: 0 20px 60px rgba(0, 0, 0, 0.5);
+  --shadow-1: 0 1px 2px rgba(23, 35, 30, 0.06);
+  --shadow-2: 0 8px 24px rgba(23, 35, 30, 0.1);
+  --shadow-3: 0 20px 60px rgba(23, 35, 30, 0.14);
 
   /* Typography — Mulish (display + body) */
   --f-display:
@@ -76,6 +87,7 @@
 }
 
 html {
+  color-scheme: light;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -87,7 +99,7 @@ body {
   font-family: var(--f-body);
   font-size: var(--t-body);
   line-height: 1.6;
-  color: var(--ink-on-deep);
+  color: var(--ink);
   background: var(--paper);
   overflow-x: hidden;
 }
@@ -99,7 +111,7 @@ h4,
 h5 {
   font-family: var(--f-display);
   font-weight: 600;
-  color: var(--ink-on-deep);
+  color: var(--ink);
   letter-spacing: -0.02em;
   line-height: 1.05;
   margin: 0;
