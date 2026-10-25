@@ -28,7 +28,7 @@ export const viewport: Viewport = {
 
 const mulish = Mulish({
   subsets: ["latin", "latin-ext", "cyrillic"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "500", "600", "700", "900"],
   style: ["normal", "italic"],
   variable: "--font-mulish",
   display: "swap",
