@@ -4,7 +4,6 @@ import styles from "@/styles/Navbar.module.css";
 
 import { getT } from "@/i18n/dictionary";
 import { Locale } from "@/i18n/config";
-import LangSwitcher from "@/components/basic/lang-switcher";
 import { whatsappUrl } from "@/constants/site";
 
 export default function NavbarComponent({ lang }: { lang: Locale }) {
@@ -49,7 +48,6 @@ export default function NavbarComponent({ lang }: { lang: Locale }) {
         </nav>
 
         <div className={styles["actions"]}>
-          <LangSwitcher current={lang} />
           <a
             href={whatsappUrl(t.whatsapp_message)}
             target="_blank"
