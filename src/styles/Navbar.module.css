@@ -12,9 +12,15 @@
 .shell {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   height: 72px;
   gap: 16px;
+}
+
+@media (max-width: 720px) {
+  .shell {
+    justify-content: flex-start;
+  }
 }
 
 .brand {
@@ -54,48 +60,6 @@
   margin-top: 2px;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-}
-
-.navLink {
-  font-family: var(--f-body);
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--ink-on-deep-soft);
-  transition: color 0.2s var(--ease);
-  position: relative;
-}
-
-.navLink::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -6px;
-  height: 2px;
-  background: var(--ball);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.25s var(--ease);
-}
-
-.navLink:hover {
-  color: var(--ink-on-deep);
-}
-
-.navLink:hover::after {
-  transform: scaleX(1);
-}
-
-.actions {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
 .cta {
   display: inline-flex;
   align-items: center;
@@ -117,18 +81,7 @@
   transform: translateY(-1px);
 }
 
-.brand:focus-visible,
-.navLink:focus-visible,
 .cta:focus-visible {
   outline: 2px solid var(--court);
   outline-offset: 4px;
-}
-
-@media (max-width: 900px) {
-  .nav {
-    display: none;
-  }
-  .brandDescriptor {
-    display: none;
-  }
 }
