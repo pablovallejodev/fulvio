@@ -12,22 +12,10 @@ export type FulvioDictionary = {
   nav_cta: string;
   lang_switch_label: string;
 
-  hero_tag: string;
-  hero_title_1: string;
-  hero_title_2: string;
-  hero_vamos: string;
+  hero_title: string;
   hero_subtitle: string;
-  hero_subtitle_location: string;
-  hero_subtitle_after: string;
   hero_cta_primary: string;
   hero_cta_secondary: string;
-  hero_badge_label: string;
-  hero_badge_value: string;
-  hero_marquee_1: string;
-  hero_marquee_2: string;
-  hero_marquee_3: string;
-  hero_marquee_4: string;
-  hero_marquee_5: string;
 
   manifesto_eyebrow: string;
   manifesto_quote_1: string;
@@ -203,24 +191,11 @@ const en: FulvioDictionary = {
   nav_cta: "WhatsApp",
   lang_switch_label: "Language",
 
-  hero_tag: "Phuket, Thailand",
-  hero_title_1: "Train the",
-  hero_title_2: "Spanish way.",
-  hero_vamos: "Vamos!",
+  hero_title: "Tennis the Spanish way\nwith Fulvio in Phuket",
   hero_subtitle:
     "One Italian coach. The Spanish tennis method. Twenty-five years on court across three continents.",
-  hero_subtitle_location: "Phuket, Thailand.",
-  hero_subtitle_after:
-    " Personal sessions in Phuket for players who want to fight for every point.",
   hero_cta_primary: "Message on WhatsApp",
   hero_cta_secondary: "See the method",
-  hero_badge_label: "Now training in",
-  hero_badge_value: "Phuket · Thailand",
-  hero_marquee_1: "Vamos",
-  hero_marquee_2: "Zone 3 · Zone 2 · Zone 1",
-  hero_marquee_3: "Fight for every point",
-  hero_marquee_4: "Spanish method · High performance",
-  hero_marquee_5: "One more",
 
   manifesto_eyebrow: "The Vamos manifesto",
   manifesto_quote_1: "Tennis is not about hitting the ball. It is about",
@@ -430,24 +405,11 @@ const es: FulvioDictionary = {
   nav_contact: "Contacto",
   lang_switch_label: "Idioma",
 
-  hero_tag: "Phuket, Tailandia",
-  hero_title_1: "Entrena al",
-  hero_title_2: "estilo español.",
-  hero_vamos: "Vamos!",
+  hero_title: "Tennis al estilo español\ncon Fulvio en Phuket",
   hero_subtitle:
     "Un entrenador italiano. El método español de tenis. Veinticinco años de pista en tres continentes.",
-  hero_subtitle_location: "Phuket, Tailandia.",
-  hero_subtitle_after:
-    " Sesiones personales en Phuket para jugadores que quieren luchar cada punto.",
   hero_cta_primary: "Escribir por WhatsApp",
-  hero_cta_secondary: "Ver el método",
-  hero_badge_label: "Entrenando ahora en",
-  hero_badge_value: "Phuket · Tailandia",
-  hero_marquee_1: "Vamos",
-  hero_marquee_2: "Zona 3 · Zona 2 · Zona 1",
-  hero_marquee_3: "Cada punto se pelea",
-  hero_marquee_4: "Método español · Alto rendimiento",
-  hero_marquee_5: "Una más",
+  hero_cta_secondary: "Ver más",
 
   manifesto_eyebrow: "El manifiesto Vamos",
   manifesto_quote_1: "El tenis no va de pegarle a la bola. Va de",
@@ -651,24 +613,11 @@ const it: FulvioDictionary = {
   nav_contact: "Contatto",
   lang_switch_label: "Lingua",
 
-  hero_tag: "Phuket, Thailandia",
-  hero_title_1: "Allenati alla",
-  hero_title_2: "spagnola.",
-  hero_vamos: "Vamos!",
+  hero_title: "Tennis alla spagnola\ncon Fulvio a Phuket",
   hero_subtitle:
     "Un coach italiano. Il metodo spagnolo del tennis. Venticinque anni di campo in tre continenti.",
-  hero_subtitle_location: "Phuket, Thailandia.",
-  hero_subtitle_after:
-    " Sessioni personali a Phuket per chi vuole giocare ogni punto.",
   hero_cta_primary: "Scrivi su WhatsApp",
   hero_cta_secondary: "Vedi il metodo",
-  hero_badge_label: "In campo ora a",
-  hero_badge_value: "Phuket · Thailandia",
-  hero_marquee_1: "Vamos",
-  hero_marquee_2: "Zona 3 · Zona 2 · Zona 1",
-  hero_marquee_3: "Ogni punto si combatte",
-  hero_marquee_4: "Metodo spagnolo · Alta intensità",
-  hero_marquee_5: "Ancora una",
 
   manifesto_eyebrow: "Il manifesto Vamos",
   manifesto_quote_1: "Il tennis non è colpire la palla. È",
@@ -872,24 +821,11 @@ const ru: FulvioDictionary = {
   nav_contact: "Контакт",
   lang_switch_label: "Язык",
 
-  hero_tag: "Пхукет, Таиланд",
-  hero_title_1: "Тренируйся по-",
-  hero_title_2: "испански.",
-  hero_vamos: "Vamos!",
+  hero_title: "Теннис в испанском стиле\nс Фульвио на Пхукете",
   hero_subtitle:
     "Итальянский тренер. Испанский метод тенниса. Двадцать пять лет на корте на трёх континентах.",
-  hero_subtitle_location: "Пхукет, Таиланд.",
-  hero_subtitle_after:
-    " Персональные тренировки в Пхукете для игроков, которые готовы бороться за каждый мяч.",
   hero_cta_primary: "Написать в WhatsApp",
   hero_cta_secondary: "Смотреть метод",
-  hero_badge_label: "Сейчас тренирую в",
-  hero_badge_value: "Пхукете · Таиланд",
-  hero_marquee_1: "Vamos",
-  hero_marquee_2: "Зона 3 · Зона 2 · Зона 1",
-  hero_marquee_3: "Каждый мяч — борьба",
-  hero_marquee_4: "Испанский метод · Высокий уровень",
-  hero_marquee_5: "Ещё один",
 
   manifesto_eyebrow: "Манифест Vamos",
   manifesto_quote_1: "Теннис — это не про удар. Это про то, как",
@@ -1090,23 +1026,11 @@ const th: FulvioDictionary = {
   nav_contact: "ติดต่อ",
   lang_switch_label: "ภาษา",
 
-  hero_tag: "ภูเก็ต ประเทศไทย",
-  hero_title_1: "ฝึกในแบบ",
-  hero_title_2: "สเปน",
-  hero_vamos: "Vamos!",
+  hero_title: "เทนนิสสไตล์สเปน\nกับ Fulvio ที่ภูเก็ต",
   hero_subtitle:
     "โค้ชอิตาเลียนหนึ่งคน เมธอดเทนนิสสเปน ยี่สิบห้าปีบนคอร์ตในสามทวีป",
-  hero_subtitle_location: "ภูเก็ต, ประเทศไทย.",
-  hero_subtitle_after: " ฝึกส่วนตัวที่ภูเก็ตสำหรับผู้เล่นที่ต้องการสู้ทุกแต้ม",
   hero_cta_primary: "ทักทาย WhatsApp",
   hero_cta_secondary: "ดูเมธอด",
-  hero_badge_label: "ตอนนี้สอนที่",
-  hero_badge_value: "ภูเก็ต · ประเทศไทย",
-  hero_marquee_1: "Vamos",
-  hero_marquee_2: "โซน 3 · โซน 2 · โซน 1",
-  hero_marquee_3: "สู้ทุกแต้ม",
-  hero_marquee_4: "เมธอดสเปน · ระดับสูง",
-  hero_marquee_5: "อีกหนึ่ง",
 
   manifesto_eyebrow: "แถลงการณ์ Vamos",
   manifesto_quote_1: "เทนนิสไม่ใช่แค่ตีลูก แต่คือการ",
@@ -1302,23 +1226,11 @@ const zh: FulvioDictionary = {
   nav_contact: "联系",
   lang_switch_label: "语言",
 
-  hero_tag: "泰国普吉",
-  hero_title_1: "以西班牙",
-  hero_title_2: "方式训练。",
-  hero_vamos: "Vamos!",
+  hero_title: "西班牙风格网球\n与 Fulvio 在普吉岛",
   hero_subtitle:
     "一位意大利教练。西班牙网球方法。二十五年球场经验，横跨三大洲。",
-  hero_subtitle_location: "普吉，泰国。",
-  hero_subtitle_after: "在普吉一对一，为愿意为每一分而战的球员而设。",
   hero_cta_primary: "WhatsApp 联系",
   hero_cta_secondary: "了解方法",
-  hero_badge_label: "当前授课地",
-  hero_badge_value: "泰国普吉",
-  hero_marquee_1: "Vamos",
-  hero_marquee_2: "3 区 · 2 区 · 1 区",
-  hero_marquee_3: "每一分都要拼",
-  hero_marquee_4: "西班牙方法 · 高水平",
-  hero_marquee_5: "再来一个",
 
   manifesto_eyebrow: "Vamos 宣言",
   manifesto_quote_1: "网球不是击球，而是",
