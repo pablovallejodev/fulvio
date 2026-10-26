@@ -222,24 +222,24 @@ const en: FulvioDictionary = {
   system_eyebrow: "The method",
   system_title: "Three zones. One complete point.",
   system_lead:
-    "The Spanish tennis method is built on a simple map of the court: three zones, three intentions, three ways to be the one who decides how the point ends.",
+    "The Spanish method maps the court in three zones: three intentions and one decision on how the point ends.",
   system_body:
-    "Every drill in Fulvio\u2019s sessions lives inside this map. Where does the ball come from, where do you meet it, where do you send it next. Once the map is yours, technique stops being ten thousand isolated shots and becomes a language you speak on the run.",
+    "Every Fulvio drill asks where the ball comes from, where you meet it and where you send it next. Technique becomes a language in motion.",
   zone_3_num: "3",
   zone_3_label: "Zone 3 \u00b7 Baseline",
   zone_3_title: "Defence & consistency",
   zone_3_text:
-    "Deep, heavy balls from behind the line. Read the incoming shot, recover, stay in the point. This is where matches are refused to be lost.",
+    "From behind the line, play deep and heavy: read the ball, recover and resist until the chance to turn the point arrives.",
   zone_2_num: "2",
   zone_2_label: "Zone 2 \u00b7 Transition",
   zone_2_title: "Approach & control",
   zone_2_text:
-    "Move forward with intention, take time away, prepare the winning ball. The middle of the court is where the point is really decided.",
+    "Advance with intention, take time away and set up the winning ball. This is the middle ground where points are decided.",
   zone_1_num: "1",
   zone_1_label: "Zone 1 \u00b7 Attack",
   zone_1_title: "Finish & net",
   zone_1_text:
-    "Take the ball early, close the distance, finish the point. Offensive forehand, backhand, volley \u2014 aggression with a clear head.",
+    "Take the ball early, close in and finish: attacking forehand, backhand or volley, with clear-headed aggression.",
   system_principle_1: "Footwork & positioning",
   system_principle_2: "Balance & recovery",
   system_principle_3: "Offensive patterns",
@@ -436,24 +436,24 @@ const es: FulvioDictionary = {
   system_eyebrow: "El método",
   system_title: "Tres zonas. Un punto completo.",
   system_lead:
-    "El método español de tenis se construye sobre un mapa simple de la pista: tres zonas, tres intenciones, tres formas de ser quien decide cómo acaba el punto.",
+    "El método español divide la pista en tres zonas: tres intenciones y una decisión sobre cómo acaba el punto.",
   system_body:
-    "Cada ejercicio en las sesiones de Fulvio vive dentro de este mapa. De dónde viene la bola, dónde la encuentras, dónde la mandas. Cuando el mapa es tuyo, la técnica deja de ser diez mil golpes sueltos y se convierte en un idioma que hablas en carrera.",
+    "Cada ejercicio de Fulvio parte de tres preguntas: de dónde viene la bola, dónde la golpeas y adónde la envías. La técnica se integra como un idioma en movimiento.",
   zone_3_num: "3",
   zone_3_label: "Zona 3 · Fondo",
   zone_3_title: "Defensa y consistencia",
   zone_3_text:
-    "Bolas profundas y pesadas desde detrás de la línea. Lee la bola, recupera, sostén el punto. Aquí los partidos se niegan a perderse.",
+    "Desde detrás de la línea, juega profundo y pesado: lee la bola, recupera y resiste hasta poder cambiar el punto.",
   zone_2_num: "2",
   zone_2_label: "Zona 2 · Transición",
   zone_2_title: "Aproximación y control",
   zone_2_text:
-    "Avanza con intención, quita tiempo al rival, prepara la bola que gana. El centro de la pista es donde se decide de verdad el punto.",
+    "Avanza con intención, quita tiempo y prepara la bola ganadora. En el centro de la pista se decide el punto.",
   zone_1_num: "1",
   zone_1_label: "Zona 1 · Ataque",
   zone_1_title: "Finalizar y red",
   zone_1_text:
-    "Toma la bola pronto, cierra distancia, termina el punto. Derecha ofensiva, revés, volea — agresividad con cabeza fría.",
+    "Toma la bola pronto, acorta distancia y acaba: derecha ofensiva, revés o volea, con agresividad lúcida.",
   system_principle_1: "Desplazamiento y posición",
   system_principle_2: "Equilibrio y recuperación",
   system_principle_3: "Patrones ofensivos",
@@ -644,24 +644,24 @@ const it: FulvioDictionary = {
   system_eyebrow: "Il metodo",
   system_title: "Tre zone. Un punto completo.",
   system_lead:
-    "Il metodo spagnolo del tennis si costruisce su una mappa semplice del campo: tre zone, tre intenzioni, tre modi di essere chi decide come finisce il punto.",
+    "Il metodo spagnolo divide il campo in tre zone: tre intenzioni e una decisione su come chiudere il punto.",
   system_body:
-    "Ogni esercizio nelle sessioni di Fulvio vive dentro questa mappa. Da dove arriva la palla, dove la incontri, dove la mandi dopo. Quando la mappa è tua, la tecnica smette di essere diecimila colpi isolati e diventa una lingua che parli in corsa.",
+    "Ogni esercizio di Fulvio parte da tre domande: da dove arriva la palla, dove la colpisci e dove la mandi. La tecnica diventa un linguaggio in movimento.",
   zone_3_num: "3",
   zone_3_label: "Zona 3 · Fondo",
   zone_3_title: "Difesa & consistenza",
   zone_3_text:
-    "Palle profonde e pesanti dietro la linea. Leggi il colpo, recupera, resta nel punto. Qui le partite si rifiutano di perderle.",
+    "Da dietro la linea, gioca profondo e pesante: leggi la palla, recupera e resisti finché puoi ribaltare il punto.",
   zone_2_num: "2",
   zone_2_label: "Zona 2 · Transizione",
   zone_2_title: "Avvicinamento & controllo",
   zone_2_text:
-    "Avanza con intenzione, togli tempo, prepara la palla che chiude. Il centro del campo è dove si decide davvero il punto.",
+    "Avanza con intenzione, togli tempo e prepara la palla vincente. È al centro che si decide il punto.",
   zone_1_num: "1",
   zone_1_label: "Zona 1 · Attacco",
   zone_1_title: "Chiudere & rete",
   zone_1_text:
-    "Prendi la palla presto, chiudi la distanza, finisci il punto. Dritto offensivo, rovescio, volée — aggressività a mente fredda.",
+    "Prendi la palla presto, accorcia la distanza e chiudi: dritto offensivo, rovescio o volée, con aggressività lucida.",
   system_principle_1: "Footwork e posizionamento",
   system_principle_2: "Equilibrio e recupero",
   system_principle_3: "Schemi offensivi",
@@ -852,24 +852,24 @@ const ru: FulvioDictionary = {
   system_eyebrow: "Метод",
   system_title: "Три зоны. Один полный розыгрыш.",
   system_lead:
-    "Испанский метод строится на простой карте корта: три зоны, три намерения, три способа быть тем, кто решает, чем закончится розыгрыш.",
+    "Испанский метод делит корт на три зоны: три намерения и решение о том, чем закончится розыгрыш.",
   system_body:
-    "Каждое упражнение у Фульвио живёт внутри этой карты. Откуда пришёл мяч, где ты его встречаешь, куда отправляешь дальше. Когда карта твоя, техника перестаёт быть десятью тысячами отдельных ударов и становится языком, на котором ты говоришь на бегу.",
+    "В каждом упражнении Фульвио важны три вопроса: откуда мяч, где ты его встречаешь и куда направляешь. Техника становится языком в движении.",
   zone_3_num: "3",
   zone_3_label: "Зона 3 · Задняя линия",
   zone_3_title: "Защита и стабильность",
   zone_3_text:
-    "Глубокие тяжёлые мячи из-за линии. Читай удар, восстанавливайся, оставайся в розыгрыше. Здесь матчи отказываются проигрывать.",
+    "Из-за линии играй глубоко и тяжело: читай мяч, возвращайся в позицию и держись, пока не появится шанс переломить розыгрыш.",
   zone_2_num: "2",
   zone_2_label: "Зона 2 · Переход",
   zone_2_title: "Подход и контроль",
   zone_2_text:
-    "Двигайся вперёд с намерением, забирай время у соперника, готовь выигрышный мяч. Середина корта — там, где розыгрыш решается по-настоящему.",
+    "Иди вперёд с намерением, отнимай время и готовь выигрышный мяч. В центре корта решается исход розыгрыша.",
   zone_1_num: "1",
   zone_1_label: "Зона 1 · Атака",
   zone_1_title: "Завершение и сетка",
   zone_1_text:
-    "Бери мяч рано, сокращай дистанцию, закрывай розыгрыш. Атакующий форхенд, бэкхенд, воля — агрессия с холодной головой.",
+    "Бей пораньше, сокращай дистанцию и завершай: атакующий форхенд, бэкхенд или воллей — осознанная агрессия.",
   system_principle_1: "Работа ног и позиционирование",
   system_principle_2: "Баланс и восстановление",
   system_principle_3: "Атакующие схемы",
@@ -1056,24 +1056,24 @@ const th: FulvioDictionary = {
   system_eyebrow: "เมธอด",
   system_title: "สามโซน แต้มเดียวที่สมบูรณ์",
   system_lead:
-    "เมธอดเทนนิสสเปนสร้างขึ้นบนแผนที่คอร์ตแบบเรียบง่าย: สามโซน สามความตั้งใจ สามวิธีที่จะเป็นคนตัดสินว่าแต้มจะจบอย่างไร",
+    "เมธอดสเปนแบ่งคอร์ตเป็นสามโซน: สามความตั้งใจ และการตัดสินใจว่าจะจบแต้มอย่างไร",
   system_body:
-    "ทุกดรริลล์ในเซสชันของ Fulvio อยู่ภายในแผนที่นี้ ลูกมาจากไหน คุณเจอลูกที่ไหน ส่งลูกไปที่ไหนต่อ เมื่อแผนที่เป็นของคุณ เทคนิคจะไม่ใช่ช็อตหมื่นครั้งกระจัดกระจาย แต่เป็นภาษาที่คุณพูดได้ในระหว่างวิ่ง",
+    "ทุกดริลล์ของ Fulvio เริ่มจากสามคำถาม: ลูกมาจากไหน คุณตีตรงไหน และส่งไปที่ใด เทคนิคจึงกลายเป็นภาษาที่ใช้ได้ขณะเคลื่อนที่",
   zone_3_num: "3",
   zone_3_label: "โซน 3 · เส้นหลัง",
   zone_3_title: "การรับ & ความสม่ำเสมอ",
   zone_3_text:
-    "ลูกลึกและหนักจากด้านหลังเส้น อ่านลูก ฟื้นตัว อยู่ในแต้ม ที่นี่คือที่ที่แมตช์ปฏิเสธที่จะแพ้",
+    "จากหลังเส้น ตีลูกให้ลึกและหนัก อ่านลูก กลับสู่ตำแหน่ง และยืนหยัดจนมีโอกาสพลิกแต้ม",
   zone_2_num: "2",
   zone_2_label: "โซน 2 · ช่วงต่อ",
   zone_2_title: "เข้าใกล้ & ควบคุม",
   zone_2_text:
-    "เคลื่อนที่ไปข้างหน้าด้วยความตั้งใจ ตัดเวลาให้คู่ต่อสู้ เตรียมลูกที่จะจบ กลางคอร์ตคือที่ที่แต้มถูกตัดสินจริง",
+    "ขยับขึ้นหน้าอย่างมีเป้าหมาย แย่งเวลาคู่แข่ง และเตรียมลูกปิดแต้ม จุดตัดสินอยู่กลางคอร์ต",
   zone_1_num: "1",
   zone_1_label: "โซน 1 · จู่โจม",
   zone_1_title: "จบ & เน็ต",
   zone_1_text:
-    "ตีลูกเร็ว ลดระยะ จบแต้ม โฟร์แฮนด์รุก แบ็คแฮนด์ วอลเลย์ — เชิงรุกด้วยหัวที่เย็น",
+    "ตีลูกตั้งแต่ต้น ลดระยะ และปิดแต้มด้วยโฟร์แฮนด์รุก แบ็คแฮนด์ หรือวอลเลย์ — บุกอย่างมีสติ",
   system_principle_1: "ฟุตเวิร์ก & ตำแหน่ง",
   system_principle_2: "สมดุล & ฟื้นตัว",
   system_principle_3: "แพทเทิร์นรุก",
@@ -1256,24 +1256,24 @@ const zh: FulvioDictionary = {
   system_eyebrow: "方法",
   system_title: "三区。一分完整。",
   system_lead:
-    "西班牙网球方法建立在一张简洁的球场地图上：三个区、三种意图、三种方式决定一分如何结束。",
+    "西班牙网球方法将球场分为三区：三种意图，以及决定这一分如何结束的选择。",
   system_body:
-    "Fulvio 的每一个训练都活在这张地图里。球从哪里来，你在哪里迎球，下一球送到哪里。当地图属于你，技术就不再是一万个孤立的击球，而是你在奔跑中说的一种语言。",
+    "Fulvio 的每项练习都从三个问题出发：球从哪里来、在哪里击球、下一球送向哪里。技术融入移动，成为一种语言。",
   zone_3_num: "3",
   zone_3_label: "3 区 · 底线",
   zone_3_title: "防守与稳定",
   zone_3_text:
-    "底线之后的深沉重球。读球、回位、留在分里。这里是拒绝输掉比赛的地方。",
+    "站在底线后打出深而重的球：判断来球、回位并坚持，等待扭转这一分的机会。",
   zone_2_num: "2",
   zone_2_label: "2 区 · 过渡",
   zone_2_title: "上前与控制",
   zone_2_text:
-    "有意向前，压缩对手时间，准备致胜球。中场才是真正决定一分的地方。",
+    "有目的地前压、压缩对手时间，为制胜球铺垫。中场是决定这一分的关键。",
   zone_1_num: "1",
   zone_1_label: "1 区 · 进攻",
   zone_1_title: "完成与网前",
   zone_1_text:
-    "早点击球、缩短距离、结束这一分。攻击正手、反手、截击——冷静的进攻。",
+    "提前击球、缩短距离并结束这一分：进攻正手、反手或截击，果断而清醒。",
   system_principle_1: "步法与位置",
   system_principle_2: "平衡与回位",
   system_principle_3: "进攻套路",
