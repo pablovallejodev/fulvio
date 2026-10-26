@@ -14,8 +14,8 @@ export default function NavbarComponent({ lang }: { lang: Locale }) {
           <Image
             src="/icon.png"
             alt=""
-            width={32}
-            height={32}
+            width={40}
+            height={40}
             className={styles["brandIcon"]}
             priority
           />
