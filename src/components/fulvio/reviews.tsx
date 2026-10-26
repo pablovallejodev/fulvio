@@ -29,7 +29,7 @@ export default function ReviewsSection({ lang }: { lang: Locale }) {
   return (
     <section
       id="reviews"
-      className={`${styles["sectionTight"]} ${styles["sectionSand"]}`}
+      className={styles["sectionTight"]}
       aria-labelledby="reviews-title"
     >
       <div className="df-shell">
