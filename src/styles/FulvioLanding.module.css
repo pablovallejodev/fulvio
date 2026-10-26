@@ -379,125 +379,95 @@
 /* -------------------- Spanish System -------------------- */
 
 .systemLayout {
-  display: grid;
-  grid-template-columns: 1fr 1.1fr;
-  gap: clamp(32px, 6vw, 80px);
-  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(32px, 5vw, 48px);
 }
 
 .systemCopy {
-  position: sticky;
-  top: 100px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 16px;
+  max-width: 760px;
 }
 
-.systemPrinciples {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  gap: 10px;
-  width: 100%;
+.systemCopy .title {
+  margin: 0;
 }
 
-.principle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 16px;
-  border: 1px solid var(--line);
-  border-radius: var(--r-pill);
-  font-size: 13px;
-  font-weight: 500;
-  line-height: 1.25;
-  text-align: center;
-  color: var(--ink-soft);
-  background: var(--sand);
-  min-height: 40px;
+.systemCopy .lead,
+.systemCopy .body {
+  margin: 0;
+}
+
+.systemCopy .lead {
+  color: var(--ink);
 }
 
 .court {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 0;
 }
 
 .zone {
-  position: relative;
-  padding: 28px 28px 28px 96px;
-  border-radius: var(--r-lg);
-  overflow: hidden;
-  transition: transform 0.4s var(--ease);
-}
-.zone:hover {
-  transform: translateY(-2px);
-}
-
-.zone3 {
-  background: linear-gradient(120deg, var(--court-soft), transparent 70%);
-  border: 1px solid var(--line);
-}
-.zone2 {
-  background: linear-gradient(120deg, var(--clay-soft), transparent 70%);
-  border: 1px solid var(--line);
-}
-.zone2 .zoneText {
-  color: var(--ink-soft);
-}
-.zone1 {
-  background: var(--ball);
-  color: var(--ink);
-  border: 1px solid var(--ball-deep);
-}
-.zone1 .zoneTitle,
-.zone1 .zoneText {
-  color: var(--ink);
-}
-.zone1 .zoneLabel {
-  color: var(--ink);
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr) minmax(0, 1.5fr);
+  grid-template-areas:
+    "num label label"
+    ". title text";
+  align-items: baseline;
+  column-gap: 24px;
+  padding: 24px 8px;
+  border-bottom: 1px solid var(--line);
 }
 
 .zoneNum {
-  position: absolute;
-  top: 24px;
-  left: 24px;
+  grid-area: num;
   font-family: var(--f-display);
-  font-size: 56px;
+  font-size: clamp(40px, 5vw, 56px);
   font-weight: 600;
   line-height: 1;
-  color: var(--court);
+  color: var(--ball-ink);
   letter-spacing: -0.05em;
 }
 
-.zone1 .zoneNum {
-  color: var(--ink);
+.zone1 {
+  background: var(--ball-soft);
+  border-radius: var(--r-md);
+  border: 0;
+  margin-block: 8px;
+  padding-inline: 16px;
 }
 
 .zoneLabel {
+  grid-area: label;
   font-size: 11px;
   letter-spacing: 0.16em;
   text-transform: uppercase;
   font-weight: 600;
   color: var(--court-deep);
-  margin-bottom: 4px;
+  margin: 0 0 8px;
 }
 
 .zoneTitle {
+  grid-area: title;
   font-family: var(--f-display);
   font-size: var(--t-h4);
   font-weight: 600;
   letter-spacing: -0.02em;
-  margin: 0 0 8px;
+  margin: 0;
   color: var(--ink);
 }
 
 .zoneText {
+  grid-area: text;
   font-size: 15px;
   line-height: 1.55;
-  color: var(--slate);
+  color: var(--ink-soft);
   margin: 0;
+  overflow-wrap: anywhere;
 }
 
 /* -------------------- Training flow -------------------- */
@@ -1244,7 +1214,6 @@
 
 @media (max-width: 1024px) {
   .coachLayout,
-  .systemLayout,
   .videoBento {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -1278,9 +1247,6 @@
     min-height: 0;
     aspect-ratio: 16 / 9;
   }
-  .systemCopy {
-    position: static;
-  }
   .flowGrid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1299,16 +1265,19 @@
     padding-block: 48px;
   }
 
-  .systemPrinciples {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 8px;
+  .zone {
+    grid-template-columns: 48px minmax(0, 1fr);
+    grid-template-areas:
+      "num label"
+      ". title"
+      ". text";
+    column-gap: 16px;
+    row-gap: 8px;
+    padding: 24px 0;
   }
 
-  .principle {
-    width: 100%;
-    padding: 10px 12px;
-    font-size: 12px;
+  .zone1 {
+    padding-inline: 12px;
   }
 
   .heroTitle {

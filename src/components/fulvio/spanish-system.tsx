@@ -5,14 +5,6 @@ import { Reveal, Stagger, StaggerItem } from "@/components/fulvio/motion";
 
 export default function SpanishSystemSection({ lang }: { lang: Locale }) {
   const t = getT(lang);
-  const principles = [
-    t.system_principle_1,
-    t.system_principle_2,
-    t.system_principle_3,
-    t.system_principle_4,
-    t.system_principle_5,
-    t.system_principle_6,
-  ];
 
   const zones = [
     {
@@ -21,7 +13,6 @@ export default function SpanishSystemSection({ lang }: { lang: Locale }) {
       label: t.zone_3_label,
       title: t.zone_3_title,
       text: t.zone_3_text,
-      classes: styles["zone3"],
     },
     {
       key: "zone2",
@@ -29,7 +20,6 @@ export default function SpanishSystemSection({ lang }: { lang: Locale }) {
       label: t.zone_2_label,
       title: t.zone_2_title,
       text: t.zone_2_text,
-      classes: styles["zone2"],
     },
     {
       key: "zone1",
@@ -37,7 +27,6 @@ export default function SpanishSystemSection({ lang }: { lang: Locale }) {
       label: t.zone_1_label,
       title: t.zone_1_title,
       text: t.zone_1_text,
-      classes: styles["zone1"],
     },
   ];
 
@@ -64,19 +53,18 @@ export default function SpanishSystemSection({ lang }: { lang: Locale }) {
             <Reveal delay={0.15}>
               <p className={styles["body"]}>{t.system_body}</p>
             </Reveal>
-            <Stagger className={styles["systemPrinciples"]} gap={0.04}>
-              {principles.map((item) => (
-                <StaggerItem key={item} className={styles["principle"]}>
-                  {item}
-                </StaggerItem>
-              ))}
-            </Stagger>
           </div>
 
           <Stagger className={styles["court"]} gap={0.1}>
             {zones.map((zone) => (
               <StaggerItem key={zone.key}>
-                <article className={`${styles["zone"]} ${zone.classes}`}>
+                <article
+                  className={
+                    zone.key === "zone1"
+                      ? `${styles["zone"]} ${styles["zone1"]}`
+                      : styles["zone"]
+                  }
+                >
                   <span className={styles["zoneNum"]} aria-hidden="true">
                     {zone.num}
                   </span>
