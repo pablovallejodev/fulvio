@@ -538,29 +538,55 @@
 
 /* -------------------- Programs -------------------- */
 
+.programSection {
+  padding: clamp(96px, 14vw, 160px) 0;
+}
+
+.programHeader {
+  max-width: 960px;
+}
+
+.programHeading {
+  font-family: var(--f-display);
+  font-size: clamp(32px, 5vw, 64px);
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  line-height: 1.1;
+  color: var(--ink-on-deep);
+}
+
 .programGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-auto-rows: 1fr;
   gap: 20px;
+}
+
+.programItem {
+  display: flex;
 }
 
 .program {
   position: relative;
   display: flex;
   flex-direction: column;
+  flex: 1;
+  height: 100%;
   gap: 16px;
   padding: 32px 28px;
-  border: 1px solid var(--line);
+  border: 1px solid var(--line-on-deep);
   border-radius: var(--r-xl);
-  background: var(--paper);
+  background: var(--deep-card);
   transition:
     transform 0.3s var(--ease),
-    border-color 0.3s var(--ease);
+    border-color 0.3s var(--ease),
+    background-color 0.3s var(--ease);
   overflow: hidden;
 }
 .program:hover {
   transform: translateY(-4px);
   border-color: var(--ball);
+  background: var(--deep-card-hover);
 }
 
 .programNum {
@@ -568,7 +594,7 @@
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.14em;
-  color: var(--court-deep);
+  color: var(--ball);
 }
 
 .programTitle {
@@ -576,14 +602,14 @@
   font-size: var(--t-h4);
   font-weight: 600;
   letter-spacing: -0.02em;
-  color: var(--ink);
+  color: var(--ink-on-deep);
   margin: 0;
 }
 
 .programText {
   font-size: 15px;
   line-height: 1.55;
-  color: var(--slate);
+  color: var(--ink-on-deep-soft);
 }
 
 /* -------------------- Coach -------------------- */

@@ -26,16 +26,16 @@ export default function ProgramsSection({ lang }: { lang: Locale }) {
   return (
     <section
       id="programs"
-      className={`${styles["section"]} ${styles["sectionSand"]}`}
+      className={`${styles["section"]} ${styles["sectionDark"]} ${styles["programSection"]}`}
       aria-labelledby="programs-title"
     >
       <div className="df-shell">
-        <div className={styles["header"]}>
+        <div className={`${styles["header"]} ${styles["programHeader"]}`}>
           <Reveal>
             <span className={styles["eyebrow"]}>{t.programs_eyebrow}</span>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 id="programs-title" className={styles["title"]}>
+            <h2 id="programs-title" className={styles["programHeading"]}>
               {t.programs_title}
             </h2>
           </Reveal>
@@ -45,7 +45,7 @@ export default function ProgramsSection({ lang }: { lang: Locale }) {
         </div>
         <Stagger className={styles["programGrid"]} gap={0.1}>
           {programs.map((program) => (
-            <StaggerItem key={program.num}>
+            <StaggerItem key={program.num} className={styles["programItem"]}>
               <article className={styles["program"]}>
                 <span className={styles["programNum"]}>{program.num}</span>
                 <h3 className={styles["programTitle"]}>{program.title}</h3>
