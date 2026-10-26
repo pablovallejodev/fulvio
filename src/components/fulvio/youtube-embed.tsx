@@ -58,18 +58,23 @@ export default function YoutubeEmbed({
       >
         <Image
           src={youtubeThumb(videoId)}
-          alt={title}
+          alt=""
           fill
           sizes={THUMB_SIZES[variant]}
           className={styles["videoThumb"]}
         />
-        <span className={styles["videoOverlay"]}>
-          <h3 className={styles["videoTitle"]}>{title}</h3>
-        </span>
-        <span className={styles["videoPlayBtn"]} aria-hidden="true">
-          ▶
-        </span>
       </button>
+      <div className={styles["videoOverlay"]}>
+        <h3 className={styles["videoTitle"]}>{title}</h3>
+      </div>
+      <span className={styles["videoPlayBtn"]} aria-hidden="true">
+        <svg viewBox="0 0 24 24" focusable="false">
+          <path
+            d="M8.5 5.6a.75.75 0 0 1 1.13-.65l10.1 6.4a.77.77 0 0 1 0 1.3l-10.1 6.4a.75.75 0 0 1-1.13-.65V5.6Z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
     </div>
   );
 }

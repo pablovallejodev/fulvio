@@ -42,7 +42,7 @@ export default function VideosSection({ lang }: { lang: Locale }) {
   return (
     <section
       id="videos"
-      className={`${styles["section"]} ${styles["sectionSand"]}`}
+      className={`${styles["section"]} ${styles["sectionDark"]}`}
       aria-labelledby="videos-title"
     >
       <div className="df-shell">
